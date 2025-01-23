@@ -61,9 +61,9 @@ body {
     border: none;
     background-color: #ffffff;
     color: rgb(59, 59, 59);
-    width: 350px;
+    width: 280px;
     height: 60px;
-    font-size: 26px;
+    font-size: 20px;
     border-radius: 5px;
     transition: 0.4s ease;
 }
@@ -71,6 +71,7 @@ body {
 .btnStores:hover{
     background-color: #CCB186;
     color: white;
+    width: 300px;
 }
 
 .a-few-words{
@@ -103,4 +104,34 @@ body {
     position: absolute;
     top: -20px;
     left: 45%;
+}
+
+.where-to-find{
+    position: relative;
+}
+
+.where-to-find::before{
+    content: '';
+    width: 100px;
+    height: 6px;
+    background-color: #CCB186;
+    position: absolute;
+    top: -20px;
+    left: 0;
+}
+
+.btnDirections {
+    width: 200px; 
+    background-color: #FEF7ED; 
+    border-radius: 5px; 
+    border-width: 1px; 
+    font-size: 18px; 
+    transition: 0.5s ease;
+}
+
+.btnDirections:hover {
+    background-color: #CCB186;
+    border: none;
+    color: white;
+    width: 220px;
 }
