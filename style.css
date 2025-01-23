@@ -10,6 +10,10 @@ body {
     height: 200px;
 }
 
+a{
+    text-decoration: none;
+}
+
 .nav-item a{
     font-size: 22px;
     color: #3B3A3E;
@@ -147,4 +151,26 @@ body {
     border: none;
     color: white;
     width: 220px;
+}
+
+.facebookBtn {
+    border: none;
+    width: 200px;
+    color: white;
+    background-color: #3B3A3E;
+    border: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    font-size: 18px;
+}
+
+.instagramBtn {
+    border: none;
+    width: 200px;
+    color: white;
+    background-color: #3B3A3E;
+    border: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    font-size: 18px;
 }
