@@ -142,6 +142,7 @@ a{
     background-color: #FEF7ED; 
     border-radius: 5px; 
     border-width: 1px; 
+    border-color: #555555;
     font-size: 18px; 
     transition: 0.5s ease;
 }
