@@ -90,3 +90,17 @@ body {
 .few-words-img{
     height: 300px;
 }
+
+.our-services{
+    position: relative;
+}
+
+.our-services::before{
+    content: '';
+    width: 100px;
+    height: 6px;
+    background-color: #CCB186;
+    position: absolute;
+    top: -20px;
+    left: 45%;
+}
