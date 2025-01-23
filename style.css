@@ -59,19 +59,32 @@ body {
 
 .btnStores{
     border: none;
-    background-color: #ffffff;
-    color: rgb(59, 59, 59);
-    width: 280px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    width: 300px;
     height: 60px;
     font-size: 20px;
     border-radius: 5px;
     transition: 0.4s ease;
+    border: solid;
+    border-width: 1px;
+    border-color: #FEF7ED;
+    position: relative;
 }
 
 .btnStores:hover{
     background-color: #CCB186;
     color: white;
-    width: 300px;
+    width: 320px;
+    border: none;
+}
+
+.btnStores::after {
+    content: url(assets/arrow.png);
+    position: absolute;
+    margin-left: 10px;
+    margin-right: 50px;
+
 }
 
 .a-few-words{
