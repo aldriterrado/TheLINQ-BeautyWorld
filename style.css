@@ -74,6 +74,7 @@ body {
 }
 
 .a-few-words{
+    color: #3B3A3E;
     position: relative;
 }
 
@@ -84,4 +85,8 @@ body {
     background-color: #CCB186;
     position: absolute;
     top: -20px;
+}
+
+.few-words-img{
+    height: 300px;
 }
