@@ -115,6 +115,18 @@ a{
     left: 45%;
 }
 
+.zoom-img{
+    overflow: hidden;
+}
+
+.zoom-img img{
+    transition: all 0.3s ease-in-out;
+}
+
+.zoom-img img:hover {
+    transform: scale(1.2);
+}
+
 .where-to-find{
     position: relative;
 }
@@ -145,7 +157,7 @@ a{
     background-color: #CCB186;
     border: none;
     color: white;
-    width: 220px;
+    width: 250px;
 }
 
 .facebookBtn {
@@ -157,6 +169,13 @@ a{
     border-radius: 10px;
     border-width: 1px;
     font-size: 18px;
+    transition: all 0.5s ease;
+}
+
+.facebookBtn:hover {
+    background-color: #CCB186;
+    border: none;
+    width: 210px;
 }
 
 .instagramBtn {
@@ -168,4 +187,11 @@ a{
     border-radius: 10px;
     border-width: 1px;
     font-size: 18px;
+    transition: all 0.5s ease;
+}
+
+.instagramBtn:hover {
+    background-color: #CCB186;
+    border: none;
+    width: 210px;
 }
