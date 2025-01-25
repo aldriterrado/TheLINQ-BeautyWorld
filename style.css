@@ -244,11 +244,109 @@ a{
         color: white !important;
     }
 
-    .nav-link button {
-        background-color: #CCB186;
-        border: none;
-        margin-top: 20px !important;
+    .gettinghere {
+        margin-top: 20px;
     }
+
+    .gettinghere a{
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .first-title {
+        padding-top: 300px !important;
+    }
+
+    .second-title {
+        font-size: 85px;
+    }
+
+    .few-words-img {
+        height: 200px;
+    }
+
+    .aboutLINQ{
+        font-size: 16px;
+        margin-top: 50px;
+    }
+
+    .services-details {
+        padding-left: 12px !important;
+        width: 100%;
+        margin-bottom: 50px !important;
+    }
+
+    .services-details p {
+        margin-top: 30px !important;
+    }
+
+    .services-img{
+        margin-top: 20px !important;
+        width: 100%;
+    }
+
+    .services {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .where-to-find-us {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100% !important;
+    }
+    .contact-details {
+        width: 100% !important;
+    }
+
+    .thelinqMap {
+        height: 500px !important;
+        width: 100% !important;
+    }
+
+    .map-container{
+        width: 100%;
+        margin-bottom: 100px;
+        margin-top: 50px !important;
+    }
+
+    .where-to-find {
+        margin-top: 100px !important;
+        font-size: 40px !important;
+    }
+
+    .btnDirections {
+        width: 200px !important;
+        font-size: 16px !important;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .footer-header{
+        width: 100%;
+        margin-bottom: 50px !important;
+    }
+
+    .footer-links {
+        width: 100% !important;
+    }
+
+
 
 
 }
