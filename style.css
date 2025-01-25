@@ -6,17 +6,22 @@ body {
     font-family: "Inria Serif";
 }
 
+
 .navbar-brand img{
     height: 150px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-.main-bar {
-    background-color: rgba(255, 255, 255, 0.925) !important;
-    backdrop-filter: blur(20px) !important;
-
+.navbar {
+    transition: all 0.5s ease;
 }
+
+.navbar-scrolled {
+    background-color: rgba(255, 255, 255, 0.86) !important;
+    backdrop-filter: blur(15px);
+}
+
 
 a{
     text-decoration: none;
@@ -27,40 +32,46 @@ a{
     color: #3B3A3E;
 }
 
-.gettinghere{
-    background-color: #CCB186 !important;
-    height: 42px;
-    width: 170px;
-    border-radius: 5px;
-    color: white;
-    border: none;
-    font-size: 20px;
+.menubar-scrolled{
+    color: #3B3A3E !important;
 }
 
 
-.hero-container{
-    width: 100%;
-    height: 100vh;
-    background-image: url(assets/hero1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.hero{
     position: relative;
+    width: 100%;
+    min-height: 100vh;
 }
 
-.hero-container::after{
+.hero::before {
+    z-index: 777;
     content: '';
-    background-color: #3030308c;
+    position: absolute;
+    background-color:#333333a1;
     width: 100%;
     height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.hero img {
+    z-index: 000 !important;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.hero-content{
+    z-index: 888;
+    position: relative;
 }
 
 .first-title {
-    padding-top: 380px !important;
+    padding-top: 330px !important;
 }
 
 .second-title{
@@ -69,25 +80,24 @@ a{
     color: #fcddae;
 }
 
-.btnStores{
-    border: none;
+.hero-content .btnStores {
+    text-decoration: none;
+    color: white;
     background-color: transparent;
-    color: rgb(255, 255, 255);
-    width: 300px;
-    height: 60px;
     font-size: 20px;
-    border-radius: 5px;
-    transition: 0.4s ease !important;
     border: solid;
     border-width: 1px;
-    border-color: #FEF7ED;
+    border-radius: 5px;
+    padding: 10px 30px; 
+    width: 300px; 
+    transition: 0.5s ease;
 }
 
-.btnStores:hover{
+
+.hero-content .btnStores:hover {
     background-color: #CCB186;
-    color: white;
-    width: 320px;
     border: none;
+    width: 320px;
 }
 
 
@@ -223,6 +233,7 @@ a{
 }
 
 
+
 @media(max-width: 991px){
     .sideBar{
         background-color: #3b3a3e9a;
@@ -242,6 +253,18 @@ a{
 }
 
 @media(max-width: 400px){
+    .hero{
+        min-height: 100vh;
+    }
+    .hero-content{
+        padding-top: 300px !important;
+    }
+    .sideBar{
+        background-color: #3b3a3e9a;
+        backdrop-filter: blur(10px);
+        height: 100vh;
+    }
+    
     .navbar-brand img{
         height: 100px;
     }
@@ -251,7 +274,7 @@ a{
     }
 
     .first-title{
-        padding-top: 100px !important;
+        padding-top: 5px !important;
         text-align: center;
         font-size: 30px;
     }
@@ -267,7 +290,7 @@ a{
     }
     .btnStores {
         margin-top: 10px !important;
-        width: 220px !important;
+        width: 300px !important;
         height: 40px !important;
         font-size: 14px !important;
     }

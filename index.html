@@ -12,34 +12,36 @@
 <body>
 
     <!---NAVBAR SECTION--->
-    <nav class="main-bar navbar shadow navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#"><img src="assets/Logo1.png" alt=""></a>
         <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span><i class="menubar-scrolled fa-solid fa-bars" style="color: white; font-size: 30px;"></i></span>
         </button>
         <div class="sideBar offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
-            <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <button type="button" class="btn-close btn-close-white shadow-none border-0 " data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 fw-bold">
               <li class="nav-item">
-                <a class="footer-a nav-link active me-4" aria-current="page" href="#" style="color: #CCB186;">Home</a>
+                <a class="footer-a active nav-link me-4" aria-current="page" href="index.html" style="color: #CCB186;">Home</a>
               </li>
               <li class="nav-item">
-                <a class="footer-a nav-link me-4" href="#">What's New</a>
+                <a class="footer-a nav-link me-4 text-white" href="#">What's New</a>
               </li>
               <li class="nav-item">
-                <a class="footer-a nav-link me-4" href="#">Stores</a>
+                <a class="footer-a nav-link me-4 text-white" href="#">Stores</a>
               </li>
               <li class="nav-item">
-                <a class="footer-a nav-link me-4" href="#contact">Contact Us</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link pt-0" href="#"><button class="gettinghere">Getting Here</button></a>
+                <a class="footer-a nav-link me-4 text-white" href="#contact">Contact Us</a>
               </li>
             </ul>
+            <div class="d-flex justify-content-center align-items-center">
+              <a href="" class="text-white px-3 py-1 fs-5 rounded-2" style="background-color: #CCB186;">
+                Getting Here
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -47,16 +49,19 @@
     <!---NAVBAR SECTION--->
 
     <!---HERO SECTION--->
-    <section class="hero-container container-fluid ps-0 pe-0 z-2">
-        <div class="ps-0 pe-0 z-1">
-            <div class="container z-3">
-                <h3 class="text-white display-3 mb-0 first-title" data-aos="fade-right" data-aos-duration="3000">Bukit Timah’s Next Big</h3>
-                <h1 class="display-1 second-title" data-aos="fade-right" data-aos-duration="3000">Lifestyle Destination</h1>
-                <a id="btnStores" href="">
-                    <button class="btnStores mt-5">Check out our Stores<i class="fa-solid fa-arrow-right fa-beat-fade ms-4"></i></button>
-                </a>
-            </div>
-        </div>
+    <section class="hero container-fluid ps-0 pe-0">
+      <img src="assets/hero1.jpg" alt="">
+          <div class="hero-content container">
+            <h3 class="text-white display-3 mb-0 first-title"  data-aos="fade-right" data-aos-duration="3000">Bukit Timah’s Next Big</h3>
+            <h1 class="display-1 second-title mb-5"  data-aos="fade-right" data-aos-duration="3000">Lifestyle Destination</h1>
+            <a href="">
+              <button  class="btnStores" >
+                Check out our Stores<i class="fa-solid fa-arrow-right fa-beat ms-3"></i>
+              </button>
+                
+                
+            </a>
+          </div>
     </section>
     <!---HERO SECTION--->
 
@@ -253,6 +258,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js"></script>
 
     <script>
         AOS.init();
