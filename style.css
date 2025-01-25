@@ -238,6 +238,7 @@ a{
     .sideBar{
         background-color: #3b3a3e9a;
         backdrop-filter: blur(10px);
+        height: 100vh;
     }
     .nav-link{
         color: white !important;
@@ -258,6 +259,10 @@ a{
     }
     .hero-content{
         padding-top: 300px !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .sideBar{
         background-color: #3b3a3e9a;
@@ -275,11 +280,9 @@ a{
 
     .first-title{
         padding-top: 5px !important;
-        text-align: center;
         font-size: 30px;
     }
     .second-title{
-        text-align: center;
         font-size: 40px;
     }
     #btnStores{
