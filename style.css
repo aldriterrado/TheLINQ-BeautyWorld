@@ -18,7 +18,7 @@ body {
 }
 
 .navbar-scrolled {
-    background-color: rgba(255, 255, 255, 0.775) !important;
+    background-color: rgba(255, 255, 255, 0.868) !important;
     backdrop-filter: blur(15px);
 }
 
@@ -51,7 +51,7 @@ a{
 
 
 .c-item {
-    height: 100vh;
+    height: 100dvh;
     position: relative;
 }
 
@@ -382,16 +382,6 @@ a{
 
 
 @media(max-width: 400px){
-    .hero{
-        min-height: 100vh;
-    }
-    .hero-content{
-        padding-top: 300px !important;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
     .sideBar{
         background-color: #3b3a3e9a;
         backdrop-filter: blur(10px);
@@ -402,23 +392,18 @@ a{
         height: 100px;
     }
 
-    .hero-container{
-        height: 400px;
+    .d-none {
+        display: block !important;
     }
 
-    .first-title{
-        padding-top: 5px !important;
-        font-size: 30px;
+    .c-caption p {
+        font-size: 25px !important;
     }
-    .second-title{
-        font-size: 40px;
+
+    .c-caption h1 {
+        font-size: 30px !important;
     }
-    #btnStores{
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        
-    }
+
     .btnStores {
         margin-top: 10px !important;
         width: 300px !important;
