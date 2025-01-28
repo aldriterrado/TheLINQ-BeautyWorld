@@ -18,7 +18,7 @@ body {
 }
 
 .navbar-scrolled {
-    background-color: rgba(255, 255, 255, 0.86) !important;
+    background-color: rgba(255, 255, 255, 0.775) !important;
     backdrop-filter: blur(15px);
 }
 
@@ -37,50 +37,55 @@ a{
 }
 
 
-.hero{
+
+.c-caption p {
+    font-size: 60px;
+}
+
+.c-caption h1{
+    font-family: "Kaushan Script";
+    font-size: 150px;
+    color: #fcddae;
+    margin-bottom: 60px;
+}
+
+
+.c-item {
+    height: 100vh;
     position: relative;
-    width: 100%;
-    min-height: 100vh;
 }
 
-.hero::before {
-    z-index: 777;
+.c-item::before{
     content: '';
-    position: absolute;
-    background-color:#333333a1;
-    width: 100%;
-    height: 100%;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+    background-color: #333333a1;
+
 }
 
-.hero img {
-    z-index: 000 !important;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+.c-img{
     height: 100%;
     object-fit: cover;
-
-}
-
-.hero-content{
-    z-index: 888;
+    z-index: 0;
     position: relative;
 }
 
-.first-title {
-    padding-top: 330px !important;
+.c-caption{
+    z-index: 2;
+    text-align: start;
+    top: 30%;
+
 }
 
-.second-title{
-    font-family: "Kaushan Script";
-    font-size: 130px;
-    color: #fcddae;
+.carousel-control-prev {
+    z-index: 3;
 }
 
-.hero-content .btnStores {
+.c-item .btnStores {
     text-decoration: none;
     color: white;
     background-color: transparent;
@@ -94,12 +99,11 @@ a{
 }
 
 
-.hero-content .btnStores:hover {
+.c-item .btnStores:hover {
     background-color: #CCB186;
     border: none;
     width: 320px;
 }
-
 
 .a-few-words{
     color: #3B3A3E;
@@ -232,6 +236,24 @@ a{
     width: 100%;
 }
 
+@media(max-width: 1320px){
+    .carousel-caption p {
+        text-align: center !important;
+    }
+    .c-caption h1 {
+        font-size: 100px !important;
+        text-align: center !important;
+    }
+    .c-caption a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .carousel-indicators {
+        top: 95% !important;
+    }
+}
+
 
 
 @media(max-width: 991px){
@@ -260,12 +282,20 @@ a{
         align-items: center;
     }
 
-    .first-title {
-        padding-top: 300px !important;
+    .carousel-caption p {
+        font-size: 50px !important;
+        text-align: center !important;
     }
 
-    .second-title {
-        font-size: 85px;
+    .carousel-caption a {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .carousel-caption h1 {
+        font-size: 70px !important;
+        text-align: center;
     }
 
     .few-words-img {
@@ -347,9 +377,9 @@ a{
     }
 
 
-
-
 }
+
+
 
 @media(max-width: 400px){
     .hero{
