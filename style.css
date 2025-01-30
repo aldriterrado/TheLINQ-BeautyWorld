@@ -381,7 +381,7 @@ a{
 
 
 
-@media(max-width: 400px){
+@media(max-width: 430px){
     .sideBar{
         background-color: #3b3a3e9a;
         backdrop-filter: blur(10px);
@@ -392,16 +392,15 @@ a{
         height: 100px;
     }
 
-    .d-none {
-        display: block !important;
+    .c-caption {
+        top: 43% !important;
     }
-
     .c-caption p {
-        font-size: 25px !important;
+        font-size: 20px !important;
     }
 
     .c-caption h1 {
-        font-size: 30px !important;
+        font-size: 33px !important;
     }
 
     .btnStores {
@@ -452,5 +451,41 @@ a{
 
     .a-few-words::before{
         left: 40px;
+    }
+
+    .our-services {
+        font-size: 30px !important;
+    }
+    .our-services::before{
+        left: 37% !important;
+    }
+    .services-sub {
+        font-size: 16px !important;
+    }
+    .services-container {
+        width: 100% !important;
+    }
+
+    .services-details p {
+        font-size: 16px !important;
+    }
+
+    .thelinqMap {
+        height: 300px !important;
+        width: 100% !important;
+    }
+    .facebookBtn {
+        width: 150px !important;
+        font-size: 14px !important;
+    }
+    .instagramBtn {
+        width: 150px !important;
+        font-size: 14px !important;
+    }
+    .footer-nav {
+        font-size: 13px !important;
+    }
+    .all-rights-reserve {
+        font-size: 15px !important;
     }
 }
