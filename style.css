@@ -381,7 +381,7 @@ a{
 
 
 
-@media(max-width: 430px){
+@media(max-width: 480px){
     .sideBar{
         background-color: #3b3a3e9a;
         backdrop-filter: blur(10px);
