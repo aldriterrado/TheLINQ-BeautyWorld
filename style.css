@@ -382,6 +382,12 @@ a{
 
 
 @media(max-width: 480px){
+    .fa-less-than{
+        display: none !important;
+    }
+    .fa-greater-than {
+        display: none !important;
+    }
     .sideBar{
         background-color: #3b3a3e9a;
         backdrop-filter: blur(10px);
@@ -393,18 +399,21 @@ a{
     }
 
     .c-caption {
-        top: 43% !important;
+        width: 100% !important;
+        top: 35% !important;
+        left: 0 !important;
     }
     .c-caption p {
-        font-size: 20px !important;
+        font-size: 25px !important;
     }
 
     .c-caption h1 {
-        font-size: 33px !important;
+        font-size: 40px !important;
+        margin-bottom: 20px !important;
     }
 
     .btnStores {
-        margin-top: 10px !important;
+        margin-top: 5px !important;
         width: 300px !important;
         height: 40px !important;
         font-size: 14px !important;
