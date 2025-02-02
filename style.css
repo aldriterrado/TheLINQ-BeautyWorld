@@ -252,6 +252,10 @@ a{
     .carousel-indicators {
         top: 95% !important;
     }
+
+    .services-details p {
+        font-size: 1rem !important;
+    }
 }
 
 
