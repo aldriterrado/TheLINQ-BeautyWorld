@@ -25,7 +25,11 @@ body {
 
 a{
     text-decoration: none;
+    color: #3B3A3E;
 }
+
+
+
 
 .nav-item a{
     font-size: 22px;
