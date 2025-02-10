@@ -276,10 +276,10 @@ a{
 .direction-container h1::before {
     content: '';
     width: 10%;
-    height: 10px;
+    height: 6px;
     background-color: #CCB186;
     position: absolute;
-    top: -20px;
+    top: -15px;
 }
 
 @media(max-width: 1320px){
