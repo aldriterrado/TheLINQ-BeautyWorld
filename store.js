@@ -73,11 +73,14 @@ const stores = [
     {
         category: "Health & Wellness",
         storeName: "Joyre TCMedi Spa",
-        headerImage: "",
-        storeLogo: "",
-        time: "",
+        headerImage: "joyreImg.jpg",
+        storeLogo: "joyreLogo.png",
+        modalImg: "joyre1.jpg",
+        time: "10:00am - 9:00pm Daily",
         location: "#02-10",
-        contact: "N/A"
+        contact: "+65 9836 6965",
+        description: "<strong>Joyre</strong> is a pioneer in integrating Traditional Chinese Medicine with modern spa treatments and beauty aesthetics services while using advanced biomedical technology to deliver personalised treatments that match each individual’s body constitution, and lifestyle to bring about a sense of balance and total wellness.",
+        website: "https://joyretcmedispa.com/"
     },
 
     {
@@ -148,7 +151,10 @@ function displayStores(filterCategory = "All Shops") {
             <div class="modal fade" id="storeModal${index}" tabindex="-1" aria-labelledby="storeModalLabel${index}" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" style="max-width: 60%;">
                     <div class="modal-content overflow-hidden">
-                        <div class="row modal-body d-flex pe-0 pt-5 pb-5">
+                        <div class="modal-header  border-0">
+                            <button type="button" class="btn-close border-0 shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="row modal-body d-flex pe-0 pt-2 pb-5">
                             <!-- Image Section -->
                             <div class="col-6 ps-5 my-auto d-flex flex-column">
                                 <img src="assets/${store.storeLogo}" alt="${store.storeName}" style="object-fit: cover; width: 70%;">
@@ -174,7 +180,7 @@ function displayStores(filterCategory = "All Shops") {
                             </div>
 
                             <div class="col-6 pe-0">
-                                <img src="assets/${store.modalImg}" class="" alt="${store.storeName}" style="width: 100%; height: auto; object-fit: cover;">
+                                <img src="assets/${store.modalImg}" class="" alt="${store.storeName}" style="width: 100%; height: 600px; object-fit: cover;">
                             </div>                   
                         </div>
                     </div>
