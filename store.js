@@ -101,10 +101,21 @@ const stores = [
     },
 ];
 
-function displayStores() {
+function displayStores(filterCategory = "All Shops") {
     const container = document.getElementById("store-container");
+    const storeCount = document.getElementById("storeCount");
+    container.innerHTML = ""; // Clear the container before adding new stores
 
-    stores.forEach((store, index) => {
+    // Filter stores based on the selected category
+    const filteredStores = filterCategory === "All Shops" 
+        ? stores 
+        : stores.filter(store => store.category === filterCategory);
+
+    // Update the store count
+    storeCount.textContent = filteredStores.length;
+
+    // Loop through the filtered stores and display them
+    filteredStores.forEach((store, index) => {
         const storeCard = document.createElement("div");
         storeCard.classList.add("col-md-4", "mb-5");
 
@@ -134,49 +145,109 @@ function displayStores() {
             </div>
 
             <!-- Modal -->
-           <div class="modal fade" id="storeModal${index}" tabindex="-1" aria-labelledby="storeModalLabel${index}" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" style="max-width: 60%;">
-        <div class="modal-content overflow-hidden">
-            <div class="row modal-body d-flex pe-0 pt-5 pb-5">
-                <!-- Image Section -->
+            <div class="modal fade" id="storeModal${index}" tabindex="-1" aria-labelledby="storeModalLabel${index}" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" style="max-width: 60%;">
+                    <div class="modal-content overflow-hidden">
+                        <div class="row modal-body d-flex pe-0 pt-5 pb-5">
+                            <!-- Image Section -->
+                            <div class="col-6 ps-5 my-auto d-flex flex-column">
+                                <img src="assets/${store.storeLogo}" alt="${store.storeName}" style="object-fit: cover; width: 70%;">
+                                <p class="">${store.description}</p>
+                                <ul style="list-style: none; padding: 0;">
+                                    <li class="d-flex mt-4 mb-3">
+                                        <img src="assets/time.png" alt="Time" style="height: 30px;">
+                                        <p class="mb-0 ms-2 d-flex align-items-center">${store.time}</p>
+                                    </li>
+                                    <li class="d-flex mb-3">
+                                        <img src="assets/location.png" alt="Location" style="height: 30px;">
+                                        <p class="mb-0 ms-2 d-flex align-items-center">${store.location}</p>
+                                    </li>
+                                    <li class="d-flex mb-3">
+                                        <img src="assets/phone.png" alt="Contact" style="height: 30px;">
+                                        <p class="mb-0 ms-2 d-flex align-items-center">${store.contact}</p>
+                                    </li>
+                                    <li class="d-flex mb-3">
+                                        <img src="assets/website.png" alt="Contact" style="height: 30px;">
+                                        <p class="mb-0 ms-2 d-flex align-items-center"><a href=${store.website} target="_blank" style="color: blue;">${store.website}</a></p>
+                                    </li>
+                                </ul>
+                            </div>
 
-                <!-- Text Content Section -->
-                <div class="col-6 ps-5 my-auto d-flex flex-column">
-                    <img src="assets/${store.storeLogo}" alt="${store.storeName}" style="object-fit: cover; width: 70%;">
-                    <p class="">${store.description}</p>
-                    <ul style="list-style: none; padding: 0;">
-                        <li class="d-flex mt-4 mb-3">
-                            <img src="assets/time.png" alt="Time" style="height: 30px;">
-                            <p class="mb-0 ms-2 d-flex align-items-center">${store.time}</p>
-                        </li>
-                        <li class="d-flex mb-3">
-                            <img src="assets/location.png" alt="Location" style="height: 30px;">
-                            <p class="mb-0 ms-2 d-flex align-items-center">${store.location}</p>
-                        </li>
-                        <li class="d-flex mb-3">
-                            <img src="assets/phone.png" alt="Contact" style="height: 30px;">
-                            <p class="mb-0 ms-2 d-flex align-items-center">${store.contact}</p>
-                        </li>
-                        <li class="d-flex mb-3">
-                            <img src="assets/website.png" alt="Contact" style="height: 30px;">
-                            <p class="mb-0 ms-2 d-flex align-items-center"><a href=${store.website} target="_blank" style="color: blue;">${store.website}</a></p>
-                        </li>
-                    </ul>
+                            <div class="col-6 pe-0">
+                                <img src="assets/${store.modalImg}" class="" alt="${store.storeName}" style="width: 100%; height: auto; object-fit: cover;">
+                            </div>                   
+                        </div>
+                    </div>
                 </div>
-
-                <div class="col-6 pe-0">
-                    <img src="assets/${store.modalImg}" class="" alt="${store.storeName}" style="width: 100%; height: auto; object-fit: cover;">
-                </div>
-                   
             </div>
-        </div>
-    </div>
-</div>
-
         `;
 
         container.appendChild(storeCard);
     });
 }
 
-document.addEventListener("DOMContentLoaded", displayStores);
+// Event listeners for category buttons
+document.addEventListener("DOMContentLoaded", function () {
+
+    
+    // Display all stores by default
+    displayStores("All Shops");
+
+    // All Shops button
+    const allShopsLink = document.getElementById("allShops");
+
+    // Add event listener to the "All Shops" link
+    allShopsLink.addEventListener("click", function () {
+        // Display all stores
+        displayStores("All Shops");
+
+        // Remove the 'active' class from all filter buttons
+        document.querySelectorAll(".filter-btn").forEach(link => link.classList.remove('active'));
+
+        // Add 'active' class to the "All Shops" link
+        allShopsLink.classList.add('active');
+    });
+
+        // Fashion & Apparel button
+    document.getElementById("fashionApparel").addEventListener("click", function () {
+        displayStores("Fashion & Apparel");
+
+        // Remove 'active' class from all filter buttons and add to the clicked one
+        document.querySelectorAll(".filter-btn").forEach(link => link.classList.remove('active'));
+        document.getElementById("fashionApparel").classList.add('active');
+    });
+
+    // Health & Wellness button
+    document.getElementById("healthWellness").addEventListener("click", function () {
+        displayStores("Health & Wellness");
+
+        // Remove 'active' class from all filter buttons and add to the clicked one
+        document.querySelectorAll(".filter-btn").forEach(link => link.classList.remove('active'));
+        document.getElementById("healthWellness").classList.add('active');
+    });
+
+    // Food & Beverage button
+    document.getElementById("foodBeverage").addEventListener("click", function () {
+        displayStores("F&B");
+
+        // Remove 'active' class from all filter buttons and add to the clicked one
+        document.querySelectorAll(".filter-btn").forEach(link => link.classList.remove('active'));
+        document.getElementById("foodBeverage").classList.add('active');
+    });
+
+    // Entertainment button
+    document.getElementById("entertainment").addEventListener("click", function () {
+        displayStores("Entertainment");
+
+        // Remove 'active' class from all filter buttons and add to the clicked one
+        document.querySelectorAll(".filter-btn").forEach(link => link.classList.remove('active'));
+        document.getElementById("entertainment").classList.add('active');
+    });
+
+    // Optional: Handle search input if needed
+    document.getElementById("searchInput").addEventListener("input", function (event) {
+        const searchTerm = event.target.value.toLowerCase();
+        const filteredStores = stores.filter(store => store.storeName.toLowerCase().includes(searchTerm));
+        displayStores(filteredStores);
+    });
+});

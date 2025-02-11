@@ -282,6 +282,14 @@ a{
     top: -15px;
 }
 
+.filter-btn.active {
+    background-color: #faeedc;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #f8ddb6;
+}
+
 @media(max-width: 1320px){
     .carousel-caption p {
         text-align: center !important;
