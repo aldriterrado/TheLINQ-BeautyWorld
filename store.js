@@ -149,14 +149,14 @@ function displayStores(filterCategory = "All Shops") {
 
             <!-- Modal -->
             <div class="modal fade" id="storeModal${index}" tabindex="-1" aria-labelledby="storeModalLabel${index}" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" style="max-width: 60%;">
+                <div class="modal-dialog modal-dialog-centered modal-sm" style="max-width: 80%;">
                     <div class="modal-content overflow-hidden">
                         <div class="modal-header  border-0">
                             <button type="button" class="btn-close border-0 shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="row modal-body d-flex pe-0 pt-2 pb-5">
                             <!-- Image Section -->
-                            <div class="col-6 ps-5 my-auto d-flex flex-column">
+                            <div class="col-md-6 ps-md-5 my-auto d-flex flex-column justify-content-center">
                                 <img src="assets/${store.storeLogo}" alt="${store.storeName}" style="object-fit: cover; width: 70%;">
                                 <p class="">${store.description}</p>
                                 <ul style="list-style: none; padding: 0;">
@@ -179,7 +179,7 @@ function displayStores(filterCategory = "All Shops") {
                                 </ul>
                             </div>
 
-                            <div class="col-6 pe-0">
+                            <div class="col-md-6 pe-0">
                                 <img src="assets/${store.modalImg}" class="" alt="${store.storeName}" style="width: 100%; height: 600px; object-fit: cover;">
                             </div>                   
                         </div>
