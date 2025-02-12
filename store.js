@@ -1,15 +1,15 @@
 const stores = [
     {
         category: "F&B",
-        storeName: "Huan Ju Dian",
+        storeName: "Lao Jiang Superior Soup",
         headerImage: "",
-        storeLogo: "",
-        time: "",
+        storeLogo: "laojiangLogo.png",
+        time: "10:00am - 11:00pm Daily",
         modalI: "",
         location: "#01-05",
-        contact: "N/A",
-        description: "",
-        website: ""
+        contact: "+65 8896 7623",
+        description: "<strong>Lao Jiang Superior Soup</strong> is a Singaporean brand established in 2011, specializing in dry-tossed noodles and slow-simmered soups. We take pride in our housemade traditional dishes, such as vinegar pork trotter, and our signature sauces, crafted with authentic local flavors. Serving both locals and tourists, we bring the taste of Singapore’s rich culinary heritage to every meal.",
+        website: "https://order.laojiangsuperiorsoup.com/"
     },
     {
         category: "F&B",
@@ -27,7 +27,7 @@ const stores = [
         category: "F&B",
         storeName: "Dough Magic",
         headerImage: "",
-        storeLogo: "",
+        storeLogo: "doughLogo.png",
         time: "",
         modalImg: "",
         location: "#01-18",
@@ -79,7 +79,7 @@ const stores = [
         category: "F&B",
         storeName: "Sushiro",
         headerImage: "",
-        storeLogo: "",
+        storeLogo: "sushiroLogo.png",
         time: "",
         modalImg: "",
         location: "#02-02 to 07",
@@ -92,13 +92,13 @@ const stores = [
         category: "Health & Wellness",
         storeName: "New Hair Design",
         headerImage: "",
-        storeLogo: "",
+        storeLogo: "newhairLogo.png",
         time: "11:00am - 8:30pm Daily <br> 10:30am - 7:00pm Sun & PH",
         modalImg: "",
         location: "#02-08",
         contact: "N/A",
         description: "",
-        website: ""
+        website: "https://newhairdesign.com.sg/"
     },
 
     {
@@ -118,12 +118,12 @@ const stores = [
         category: "Health & Wellness",
         storeName: "24/7 Fitness",
         headerImage: "",
-        storeLogo: "",
-        time: "",
-        modalImg: "",
-        location: "#02-11 to 17",
+        storeLogo: "247Logo.png",
+        time: "Always Open",
+        modalImg: "2471.jpg",
+        location: "#02-11 to #02-17",
         contact: "N/A",
-        description: "",
+        description: "At <strong>24/7 FITNESS</strong>, we are proud to redefine the fitness experience by offering state-of-the-art fitness facilities with unparalleled convenience. Membership grants 24-hour access to all our facilities, spanning Singapore, Hong Kong, Chinese Mainland, Macau, Taiwan and beyond. Our smart facial recognition gym system ensures seamless access to our facilities without any joining fee or prepayment.",
         website: ""
     },
 
@@ -133,11 +133,11 @@ const stores = [
         headerImage: "",
         storeLogo: "rafflesLogo.jpg",
         time: "Mon-Fri (except Wed) 8:30am - 1:00pm | 2:00pm - 5:30pm | 6:30pm-9:30pm <br><br> Wed 8:30am - 1:00pm | 2:00pm - 5:30pm <br> Sat 8:30am - 1:00pm",
-        modalImg: "",
+        modalImg: "raffles1.jpg",
         location: "#02-21",
         contact: "N/A",
         description: "",
-        website: ""
+        website: "http://www.rafflesmedicalgroup.com/"
     },
 ];
 
@@ -178,7 +178,7 @@ function displayStores(filteredStores) {
                 <img src="assets/${store.headerImage}" class="card-img-top" alt="${store.storeName}" style="width: 100% !important; height: 300px !important; object-fit: cover !important;">
                 <div class="card-body ps-4">
                     <div class="card-title d-flex justify-content-center align-item-center mb-3">
-                        <img src="assets/${store.storeLogo}" alt="${store.storeName}" style="object-fit: cover; height: 100px;">
+                        <img src="assets/${store.storeLogo}" alt="${store.storeName}" style="object-fit: cover; width: 200px">
                     </div>
                     <ul style="list-style: none; padding: 0;">
                         <li class="d-flex mb-3">
