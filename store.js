@@ -120,7 +120,7 @@ function displayStores(filterCategory = "All Shops") {
     // Loop through the filtered stores and display them
     filteredStores.forEach((store, index) => {
         const storeCard = document.createElement("div");
-        storeCard.classList.add("col-md-4", "mb-5");
+        storeCard.classList.add("col-lg-4", "mb-5");
 
         storeCard.innerHTML = `
             <div class="card shadow-sm" style="width: 100%">
