@@ -25,11 +25,24 @@ const stores = [
     },
     {
         category: "F&B",
+        storeName: "Dough Magic",
+        headerImage: "",
+        storeLogo: "",
+        time: "",
+        modalImg: "",
+        location: "#01-18",
+        contact: "",
+        description: "",
+        website:"",
+
+    },
+    {
+        category: "F&B",
         storeName: "Tomoro Coffee",
         headerImage: "tomoroImg.jpg",
         storeLogo: "tomoroLogo.png",
         modalImg: "tomoro1.jpg",
-        time: "8:00am - 9:00pm",
+        time: "8:00am - 9:00pm Daily",
         location: "#01-25",
         contact: "N/A",
         description: "<strong>TOMORO COFFEE</strong> specialises in speciality coffee and aims to become a world-class coffee brand. TOMORO refers to “tomorrow” and it means “embrace the goodness and yearn for tomorrow”. TOMORO strives to make every good cup of coffee with heart and encourage everyone to follow their heart bravely, feel the life with heart while yearning for tomorrow.",
@@ -80,7 +93,7 @@ const stores = [
         storeName: "New Hair Design",
         headerImage: "",
         storeLogo: "",
-        time: "",
+        time: "11:00am - 8:30pm Daily <br> 10:30am - 7:00pm Sun & PH",
         modalImg: "",
         location: "#02-08",
         contact: "N/A",
@@ -118,8 +131,8 @@ const stores = [
         category: "Health & Wellness",
         storeName: "Raffles Medical Clinic",
         headerImage: "",
-        storeLogo: "",
-        time: "",
+        storeLogo: "rafflesLogo.jpg",
+        time: "Mon-Fri (except Wed) 8:30am - 1:00pm | 2:00pm - 5:30pm | 6:30pm-9:30pm <br><br> Wed 8:30am - 1:00pm | 2:00pm - 5:30pm <br> Sat 8:30am - 1:00pm",
         modalImg: "",
         location: "#02-21",
         contact: "N/A",
@@ -161,7 +174,7 @@ function displayStores(filteredStores) {
         const storeCard = document.createElement("div");
         storeCard.classList.add("col-lg-4", "mb-5");
         storeCard.innerHTML = `
-            <div class="card shadow-sm" style="width: 100%">
+            <div class="card shadow-sm" style="width: 100%; height: 700px;">
                 <img src="assets/${store.headerImage}" class="card-img-top" alt="${store.storeName}" style="width: 100% !important; height: 300px !important; object-fit: cover !important;">
                 <div class="card-body ps-4">
                     <div class="card-title d-flex justify-content-center align-item-center mb-3">
