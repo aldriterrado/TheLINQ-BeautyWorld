@@ -149,12 +149,17 @@ function displayStores(filteredStores) {
     // Update the store count
     storeCount.textContent = `Showing ${storesToDisplay.length} out of ${filteredStores.length} stores`;
 
+    if(storesToDisplay.length == filteredStores.length){
+        paginationContainer.style.setProperty('display', 'none', 'important');
+    }else {
+        paginationContainer.style.setProperty('display', 'flex', 'important');
+    }
+  
    
     // Loop through the stores for the current page and display them
     storesToDisplay.forEach((store, index) => {
         const storeCard = document.createElement("div");
         storeCard.classList.add("col-lg-4", "mb-5");
-
         storeCard.innerHTML = `
             <div class="card shadow-sm" style="width: 100%">
                 <img src="assets/${store.headerImage}" class="card-img-top" alt="${store.storeName}" style="width: 100% !important; height: 300px !important; object-fit: cover !important;">
@@ -240,7 +245,7 @@ function renderPagination(totalStores) {
     prevButton.style.border = "none";
     prevButton.href = "#filter-section";
     prevButton.style.width = "150px";
-    prevButton.classList.add('p-3', 'shadow-sm');
+    prevButton.classList.add('p-3', 'shadow-sm', 'prevBtn');
     prevButton.style.borderRadius = "20px";
     if(currentPage === 1) {
         prevButton.disabled;
@@ -268,7 +273,7 @@ function renderPagination(totalStores) {
     nextButton.style.textAlign = "center";
     nextButton.style.width = "150px";
     nextButton.href = "#filter-section";
-    nextButton.classList.add('p-3', 'shadow-sm');
+    nextButton.classList.add('p-3', 'shadow-sm', 'nextBtn');
     nextButton.style.borderRadius = "20px";
     if(currentPage === totalPages) {
         nextButton.disabled;

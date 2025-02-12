@@ -312,6 +312,14 @@ a{
 }
 
 
+.input-icons i{
+    position: absolute;
+    font-size: 1.5rem;
+    bottom: 16px;
+    margin-right: 20px;
+    color: lightgray;
+}
+
 
 .filter-btn.active {
     background-color: #faeedc;
