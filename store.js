@@ -5,8 +5,11 @@ const stores = [
         headerImage: "",
         storeLogo: "",
         time: "",
+        modalI: "",
         location: "#01-05",
-        contact: "N/A"
+        contact: "N/A",
+        description: "",
+        website: ""
     },
     {
         category: "F&B",
@@ -14,8 +17,11 @@ const stores = [
         headerImage: "",
         storeLogo: "",
         time: "",
+        modalImg: "",
         location: "#01-06",
-        contact: "N/A"
+        contact: "N/A",
+        description: "",
+        website: ""
     },
     {
         category: "F&B",
@@ -36,8 +42,11 @@ const stores = [
         headerImage: "",
         storeLogo: "",
         time: "",
+        modalImg: "",
         location: "#01-26",
-        contact: "N/A"
+        contact: "N/A",
+        description: "",
+        website: ""
     },
 
     {
@@ -46,8 +55,11 @@ const stores = [
         headerImage: "",
         storeLogo: "",
         time: "",
+        modalImg: "",
         location: "#02-01",
-        contact: "N/A"
+        contact: "N/A",
+        description: "",
+        website: ""
     },
 
     {
@@ -56,8 +68,11 @@ const stores = [
         headerImage: "",
         storeLogo: "",
         time: "",
+        modalImg: "",
         location: "#02-02 to 07",
-        contact: "N/A"
+        contact: "N/A",
+        description: "",
+        website: ""
     },
 
     {
@@ -66,8 +81,11 @@ const stores = [
         headerImage: "",
         storeLogo: "",
         time: "",
+        modalImg: "",
         location: "#02-08",
-        contact: "N/A"
+        contact: "N/A",
+        description: "",
+        website: ""
     },
 
     {
@@ -89,8 +107,11 @@ const stores = [
         headerImage: "",
         storeLogo: "",
         time: "",
+        modalImg: "",
         location: "#02-11 to 17",
-        contact: "N/A"
+        contact: "N/A",
+        description: "",
+        website: ""
     },
 
     {
@@ -99,26 +120,38 @@ const stores = [
         headerImage: "",
         storeLogo: "",
         time: "",
+        modalImg: "",
         location: "#02-21",
-        contact: "N/A"
+        contact: "N/A",
+        description: "",
+        website: ""
     },
 ];
 
-function displayStores(filterCategory = "All Shops") {
+let currentPage = 1;
+const storesPerPage = 6;  // Show 6 stores per page
+let filteredStores = stores;  // Default to all stores
+
+
+function displayStores(filteredStores) {
     const container = document.getElementById("store-container");
     const storeCount = document.getElementById("storeCount");
-    container.innerHTML = ""; // Clear the container before adding new stores
+    const paginationContainer = document.getElementById("pagination-container");
 
-    // Filter stores based on the selected category
-    const filteredStores = filterCategory === "All Shops" 
-        ? stores 
-        : stores.filter(store => store.category === filterCategory);
+    container.innerHTML = "";  // Clear the container before adding new stores
+
+    // Calculate the number of stores to show for the current page
+    const startIndex = (currentPage - 1) * storesPerPage;
+    const endIndex = startIndex + storesPerPage;
+    const storesToDisplay = filteredStores.slice(startIndex, endIndex);
+
 
     // Update the store count
-    storeCount.textContent = filteredStores.length;
+    storeCount.textContent = `Showing ${storesToDisplay.length} out of ${filteredStores.length} stores`;
 
-    // Loop through the filtered stores and display them
-    filteredStores.forEach((store, index) => {
+   
+    // Loop through the stores for the current page and display them
+    storesToDisplay.forEach((store, index) => {
         const storeCard = document.createElement("div");
         storeCard.classList.add("col-lg-4", "mb-5");
 
@@ -143,7 +176,7 @@ function displayStores(filterCategory = "All Shops") {
                             <p class="mb-0 ms-2 d-flex align-items-center">${store.contact}</p>
                         </li>
                     </ul>
-                    <button class="btn btn-primary mt-4 mb-4 shadow-sm" data-bs-toggle="modal" data-bs-target="#storeModal${index}" style="background-color: #CCB186 !important; border-style: none !important; width: 150px;">Learn more</button>
+                    <button class="btn btn-primary mt-4 mb-4 shadow-sm" data-bs-toggle="modal" data-bs-target="#storeModal${index}" style="background-color: #3B3A3E !important; border-style: none !important; width: 150px;">Learn more</button>
                 </div>
             </div>
 
@@ -190,70 +223,144 @@ function displayStores(filterCategory = "All Shops") {
 
         container.appendChild(storeCard);
     });
+
+    // Render pagination controls
+    renderPagination(filteredStores.length);
 }
 
-// Event listeners for category buttons
-document.addEventListener("DOMContentLoaded", function () {
+function renderPagination(totalStores) {
+    const totalPages = Math.ceil(totalStores / storesPerPage);
+    const paginationContainer = document.getElementById("pagination-container");
+    paginationContainer.innerHTML = "";  // Clear pagination controls
 
-    
-    // Display all stores by default
-    displayStores("All Shops");
-
-    // All Shops button
-    const allShopsLink = document.getElementById("allShops");
-
-    // Add event listener to the "All Shops" link
-    allShopsLink.addEventListener("click", function () {
-        // Display all stores
-        displayStores("All Shops");
-
-        // Remove the 'active' class from all filter buttons
-        document.querySelectorAll(".filter-btn").forEach(link => link.classList.remove('active'));
-
-        // Add 'active' class to the "All Shops" link
-        allShopsLink.classList.add('active');
+    // Create "Previous" button
+    const prevButton = document.createElement("a");
+    prevButton.textContent = "Previous";
+    prevButton.style.textAlign = "center";
+    prevButton.style.border = "none";
+    prevButton.href = "#filter-section";
+    prevButton.style.width = "150px";
+    prevButton.classList.add('p-3', 'shadow-sm');
+    prevButton.style.borderRadius = "20px";
+    if(currentPage === 1) {
+        prevButton.disabled;
+        prevButton.style.backgroundColor = "#f0f0f0";
+        prevButton.style.cursor = "default";
+        prevButton.style.color = "#c0c0c0";
+        prevButton.classList.remove('shadow-sm');
+    }else {
+        prevButton.style.backgroundColor = "#CCB186";
+        prevButton.style.cursor = "pointer";
+        prevButton.style.color = "white";
+        prevButton.classList.add('shadow-sm');
+    }
+    prevButton.addEventListener("click", function () {
+        if (currentPage > 1) {
+            currentPage--;
+            displayStores(filteredStores);
+        }
     });
 
-        // Fashion & Apparel button
-    document.getElementById("fashionApparel").addEventListener("click", function () {
-        displayStores("Fashion & Apparel");
-
-        // Remove 'active' class from all filter buttons and add to the clicked one
-        document.querySelectorAll(".filter-btn").forEach(link => link.classList.remove('active'));
-        document.getElementById("fashionApparel").classList.add('active');
+    // Create "Next" button
+    const nextButton = document.createElement("a");
+    nextButton.textContent = "Next";
+    nextButton.style.border = "none";
+    nextButton.style.textAlign = "center";
+    nextButton.style.width = "150px";
+    nextButton.href = "#filter-section";
+    nextButton.classList.add('p-3', 'shadow-sm');
+    nextButton.style.borderRadius = "20px";
+    if(currentPage === totalPages) {
+        nextButton.disabled;
+        nextButton.style.backgroundColor = "#f0f0f0";
+        nextButton.style.cursor = "default";
+        nextButton.style.color = "#c0c0c0";
+        nextButton.classList.remove('shadow-sm')
+    }else {
+        nextButton.style.backgroundColor = "#CCB186";
+        nextButton.style.cursor = "pointer";
+        nextButton.style.color = "white";
+        nextButton.classList.add('shadow-sm')
+    }
+    nextButton.addEventListener("click", function () {
+        if (currentPage < totalPages) {
+            currentPage++;
+            displayStores(filteredStores);
+        }
     });
 
-    // Health & Wellness button
-    document.getElementById("healthWellness").addEventListener("click", function () {
-        displayStores("Health & Wellness");
+    paginationContainer.appendChild(prevButton);
+    paginationContainer.appendChild(nextButton);
+}
 
-        // Remove 'active' class from all filter buttons and add to the clicked one
-        document.querySelectorAll(".filter-btn").forEach(link => link.classList.remove('active'));
-        document.getElementById("healthWellness").classList.add('active');
-    });
 
-    // Food & Beverage button
-    document.getElementById("foodBeverage").addEventListener("click", function () {
-        displayStores("F&B");
 
-        // Remove 'active' class from all filter buttons and add to the clicked one
-        document.querySelectorAll(".filter-btn").forEach(link => link.classList.remove('active'));
-        document.getElementById("foodBeverage").classList.add('active');
-    });
+// Display all stores by default
+displayStores(filteredStores);
 
-    // Entertainment button
-    document.getElementById("entertainment").addEventListener("click", function () {
-        displayStores("Entertainment");
+// All Shops button
+document.getElementById("allShops").addEventListener("click", function () {
+    filteredStores = stores;  // All stores
+    currentPage = 1;  // Reset to page 1
+    displayStores(filteredStores);
 
-        // Remove 'active' class from all filter buttons and add to the clicked one
-        document.querySelectorAll(".filter-btn").forEach(link => link.classList.remove('active'));
-        document.getElementById("entertainment").classList.add('active');
-    });
-
-    // Optional: Handle search input if needed
-    document.getElementById("searchInput").addEventListener("input", function (event) {
-        const searchTerm = event.target.value.toLowerCase();
-        const filteredStores = stores.filter(store => store.storeName.toLowerCase().includes(searchTerm));
-        displayStores(filteredStores);
-    });
+    document.querySelectorAll(".filter-btn").forEach(link => link.classList.remove('active'));
+    this.classList.add('active');
 });
+
+// Fashion & Apparel button
+document.getElementById("fashionApparel").addEventListener("click", function () {
+    filteredStores = stores.filter(store => store.category === "Fashion & Apparel");
+    currentPage = 1;
+    displayStores(filteredStores);
+
+    document.querySelectorAll(".filter-btn").forEach(link => link.classList.remove('active'));
+    this.classList.add('active');
+});
+
+// Health & Wellness button
+document.getElementById("healthWellness").addEventListener("click", function () {
+    filteredStores = stores.filter(store => store.category === "Health & Wellness");
+    currentPage = 1;
+    displayStores(filteredStores);
+
+    document.querySelectorAll(".filter-btn").forEach(link => link.classList.remove('active'));
+    this.classList.add('active');
+});
+
+// Food & Beverage button
+document.getElementById("foodBeverage").addEventListener("click", function () {
+    filteredStores = stores.filter(store => store.category === "F&B");
+    currentPage = 1;
+    displayStores(filteredStores);
+
+    document.querySelectorAll(".filter-btn").forEach(link => link.classList.remove('active'));
+    this.classList.add('active');
+});
+
+// Entertainment button
+document.getElementById("entertainment").addEventListener("click", function () {
+    filteredStores = stores.filter(store => store.category === "Entertainment");
+    currentPage = 1;
+    displayStores(filteredStores);
+
+    document.querySelectorAll(".filter-btn").forEach(link => link.classList.remove('active'));
+    this.classList.add('active');
+});
+
+document.getElementById("searchInput").addEventListener("input", function (event) {
+    const searchTerm = event.target.value.toLowerCase();
+
+    // Filter stores by search term and selected category
+    const searchFilteredStores = filteredStores.filter(store => 
+        store.storeName.toLowerCase().includes(searchTerm)
+    );
+
+    // Reset page to 1 when search changes
+    currentPage = 1;
+
+    // Update the display with the filtered results
+    displayStores(searchFilteredStores);
+});
+
+
