@@ -19,7 +19,7 @@ const stores = [
         time: "",
         modalImg: "kei1.jpg",
         location: "#01-06",
-        contact: "N/A",
+        contact: "TBA",
         description: "<strong>Kei Kaisendon</strong> is a Japanese restaurant that serves delicious rice bowls topped with fresh sashimi from the seas of Japan! Every dish is specially designed with the right blend of fish, toppings, and seasonings to give you a unique taste every time. Come discover our Kaisendon for yourself!",
         website: "https://www.keikaisendon.com/"
     },
@@ -31,7 +31,7 @@ const stores = [
         time: "",
         modalImg: "dough1.webp",
         location: "#01-18",
-        contact: "",
+        contact: "TBA",
         description: "<strong>What’s one thing that unites us all? Nostalgia.</strong> <br><br>Ms Yang Guang grew up in the beautiful coastal city Dalian in China. After immigrating to Singapore, she missed the taste of authentic Chinese pastries and found it difficult to adjust to the new and different foods. Staples like Mantou (Plain Bun) and dumplings were especially difficult for her to go without. <br><br>The best cure for homesickness is comfort food. Ms Yang Guang built the brand “扑面而来” to bring out the essence of Chinese pastries. Considering the importance of traditional production methods, she visited Taiwan to further enhance her knowledge. Through this trip, she was able to grasp the art of making Chinese pastries as well as choosing the best ingredients and bringing out the best of their natural flavors. Through countless sleepless nights testing and developing, the recipes were made and are available to you in our stores today.",
         website:"https://doughmagic.com/",
 
@@ -44,7 +44,7 @@ const stores = [
         modalImg: "tomoro1.jpg",
         time: "8:00am - 9:00pm Daily",
         location: "#01-25",
-        contact: "N/A",
+        contact: "TBA",
         description: "<strong>TOMORO COFFEE</strong> specialises in speciality coffee and aims to become a world-class coffee brand. TOMORO refers to “tomorrow” and it means “embrace the goodness and yearn for tomorrow”. TOMORO strives to make every good cup of coffee with heart and encourage everyone to follow their heart bravely, feel the life with heart while yearning for tomorrow.",
         website: "https://www.tomoro-coffee.sg"
     },
@@ -57,7 +57,7 @@ const stores = [
         time: "",
         modalImg: "toastroll1.png",
         location: "#01-26",
-        contact: "N/A",
+        contact: "TBA",
         description: "",
         website: ""
     },
@@ -83,7 +83,7 @@ const stores = [
         time: "",
         modalImg: "sushiro1.webp",
         location: "#02-02 to 07",
-        contact: "N/A",
+        contact: "TBA",
         description: "<strong>Sushiro Singapore</strong> is part of the internationally renowned Sushiro Group, founded in Japan in 1984. Our journey began with a simple yet ambitious vision: to serve the freshest, most delectable sushi to our customers while honouring the rich traditions of Japanese cuisine. <br><br> Over the years, our dedication to this vision has allowed us to grow and expand, and we are now proud to operate multiple branches across Singapore. Each location is designed to offer a unique dining experience, blending contemporary aesthetics with the timeless beauty of Japanese culture.",
         website: "https://sushirosg.org/"
     },
@@ -96,7 +96,7 @@ const stores = [
         time: "11:00am - 8:30pm Daily <br> 10:30am - 7:00pm Sun & PH",
         modalImg: "newhair1.jpeg",
         location: "#02-08",
-        contact: "N/A",
+        contact: "TBA",
         description: "At <strong>New Hair Design</strong>, we don’t just create hairstyles for our clients—we help them find the most authentic way to express themselves. In this era of individualism, a hairstyle is not just an external enhancement but a reflection of one’s inner strength and self-expression. We believe every hairstyle has its own unique soul, just as each person is one of a kind. <br><br>With years of experience, we know that true beauty comes from inner confidence and fulfillment, not just surface appearance. We always listen carefully, taking time to understand each client’s personal style, lifestyle, and inner desires. Every design is a two-way conversation, aimed at helping our clients discover their most authentic and beautiful selves.",
         website: "https://newhairdesign.com.sg/"
     },
@@ -122,7 +122,7 @@ const stores = [
         time: "Always Open",
         modalImg: "2471.jpg",
         location: "#02-11 to #02-17",
-        contact: "N/A",
+        contact: "TBA",
         description: "At <strong>24/7 FITNESS</strong>, we are proud to redefine the fitness experience by offering state-of-the-art fitness facilities with unparalleled convenience. Membership grants 24-hour access to all our facilities, spanning Singapore, Hong Kong, Chinese Mainland, Macau, Taiwan and beyond. Our smart facial recognition gym system ensures seamless access to our facilities without any joining fee or prepayment.",
         website: "https://sg.247.fitness/"
     },
@@ -135,7 +135,7 @@ const stores = [
         time: "Mon-Fri (except Wed) 8:30am - 1:00pm | 2:00pm - 5:30pm | 6:30pm-9:30pm <br><br> Wed 8:30am - 1:00pm | 2:00pm - 5:30pm <br> Sat 8:30am - 1:00pm",
         modalImg: "raffles1.jpg",
         location: "#02-21",
-        contact: "N/A",
+        contact: "TBA",
         description: "<strong>Raffles Medical Group (RMG)</strong> <br><br>is a leading integrated private healthcare provider in Asia, operating medical facilities in 14 cities in Singapore, China, Japan, Vietnam and Cambodia. It is the only Singapore-owned private medical provider in Singapore that owns and operates a fully integrated healthcare organisation comprising a tertiary hospital, a network of family medicine and dental clinics, insurance services, Japanese and Traditional Chinese Medicine clinics, and a consumer healthcare division. <br><br>Founded in 1976 with two clinics in central Singapore, RMG has grown consistently over the years to serve over 2 million patients and 7,000 corporate clients each year. RMG has a staff strength of more than 2,700, including close to 430 multi-specialty physicians.",
         website: "http://www.rafflesmedicalgroup.com/"
     },
