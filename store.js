@@ -124,7 +124,7 @@ const stores = [
         location: "#02-11 to #02-17",
         contact: "N/A",
         description: "At <strong>24/7 FITNESS</strong>, we are proud to redefine the fitness experience by offering state-of-the-art fitness facilities with unparalleled convenience. Membership grants 24-hour access to all our facilities, spanning Singapore, Hong Kong, Chinese Mainland, Macau, Taiwan and beyond. Our smart facial recognition gym system ensures seamless access to our facilities without any joining fee or prepayment.",
-        website: ""
+        website: "https://sg.247.fitness/"
     },
 
     {
@@ -230,7 +230,7 @@ function displayStores(filteredStores) {
                                 </ul>
                             </div>
 
-                            <div class="col-md-6 pe-0">
+                            <div class="col-md-6 pe-0 modal-img-container">
                                 <img src="assets/${store.modalImg}" class="" alt="${store.storeName}" style="width: 100%; height: 600px; object-fit: cover;">
                             </div>                   
                         </div>

@@ -503,7 +503,10 @@ a{
     }
 
     .modal-dialog{
-        max-width: 100% !important;
+        max-width: 95% !important;
+    }
+    .modal-img-container {
+        padding-right: 28px !important;
     }
 
 
@@ -638,6 +641,10 @@ a{
         height: 500px !important;
     }
     .modal-dialog{
-        max-width: 100% !important;
+        max-width: 95% !important;
     }
+    .modal-img-container {
+        display: none !important;
+    }
+
 }
