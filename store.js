@@ -199,7 +199,7 @@ function displayStores(filteredStores) {
             </div>
 
             <!-- Modal -->
-            <div class="modal fade" id="storeModal${index}" tabindex="-1" aria-labelledby="storeModalLabel${index}" aria-hidden="true">
+            <div class="modal fade modal-container" id="storeModal${index}" tabindex="-1" aria-labelledby="storeModalLabel${index}" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-sm" style="max-width: 80%;">
                     <div class="modal-content overflow-hidden">
                         <div class="modal-header  border-0">

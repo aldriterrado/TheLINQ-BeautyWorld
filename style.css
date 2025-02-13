@@ -629,4 +629,12 @@ a{
         padding-left: 30px !important;
         padding-right: 30px !important;
     }
+
+    .direction-hero-container img {
+        height: 500px !important;
+    }
+    .modal-container {
+        display: flex !important;
+        justify-content: center !important;
+    }
 }
