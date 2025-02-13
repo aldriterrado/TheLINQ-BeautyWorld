@@ -46,7 +46,7 @@ a{
 
 .c-caption h1{
     font-family: "Kaushan Script";
-    font-size: 150px;
+    font-size: clamp(2rem, 10vw, 10rem);
     color: #fcddae;
     margin-bottom: 60px;
 }
@@ -533,10 +533,6 @@ a{
         font-size: 25px !important;
     }
 
-    .c-caption h1 {
-        font-size: 40px !important;
-        margin-bottom: 20px !important;
-    }
 
     .btnStores {
         margin-top: 5px !important;
