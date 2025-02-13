@@ -633,7 +633,7 @@ a{
     .direction-hero-container img {
         height: 500px !important;
     }
-    .modal{
-        width: 100% !important;
+    .modal-dialog{
+        max-width: 100% !important;
     }
 }
