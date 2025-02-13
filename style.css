@@ -502,6 +502,10 @@ a{
         font-size: 1rem !important;
     }
 
+    .modal-dialog{
+        max-width: 100% !important;
+    }
+
 
 }
 
