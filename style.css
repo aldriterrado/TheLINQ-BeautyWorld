@@ -262,9 +262,10 @@ a{
 .direction-hero-container h1 {
     position: absolute;
     top: 43%;
-    left: 35%;
+    left: 0%;
+    right: 0;
     z-index: 2;
-    font-size: 5rem;
+    font-size: clamp(1.5rem, 10vw, 5rem);
 }
 
 .direction-container h1{
@@ -279,6 +280,7 @@ a{
     background-color: #CCB186;
     position: absolute;
     top: -15px;
+
 }
 
 
@@ -306,7 +308,7 @@ a{
 
 .w-caption {
     position: absolute;
-    top: 40%;
+    top: 37%;
     left: 19%;
     z-index: 2;
 }
@@ -354,12 +356,17 @@ a{
     }
 
     .w-caption {
-        left: 2.5%;   
-        padding-left: 70px !important;
-        padding-right: 70px !important;    
+        left: 0 !important;
+        right: 0 !important;   
+        padding-left: 30px !important;
+        padding-right: 30px !important; 
     }
-    .w-caption h1 {
-        font-size: 4rem !important;
+}
+
+@media(max-width: 3000px){
+    .w-caption {
+        left: 0 !important;
+        right: 0 !important;
     }
 }
 
@@ -486,12 +493,10 @@ a{
     }
 
     .w-caption {
-        left: 3% !important;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .w-caption h1 {
-        font-size: 3rem !important;
+        left: 0 !important;
+        right: 0 !important;
+        padding-left: 30px !important;
+        padding-right: 30px !important;
     }
     .w-caption p {
         font-size: 1rem !important;
@@ -617,5 +622,15 @@ a{
     }
     .all-rights-reserve {
         font-size: 15px !important;
+    }
+
+    .w-caption p {
+        font-size: 1rem !important;
+    }
+    .w-caption {
+        left: 0 !important;
+        right: 0 !important;
+        padding-left: 30px !important;
+        padding-right: 30px !important;
     }
 }
