@@ -646,5 +646,7 @@ a{
     .modal-img-container {
         display: none !important;
     }
-
+    .store-details-container{
+        padding-right: 28px !important;
+    }
 }

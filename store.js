@@ -207,7 +207,7 @@ function displayStores(filteredStores) {
                         </div>
                         <div class="row modal-body d-flex pe-0 pt-2 pb-5">
                             <!-- Image Section -->
-                            <div class="col-md-6 ps-md-5 my-auto d-flex flex-column justify-content-center">
+                            <div class="col-md-6 ps-md-5 my-auto d-flex flex-column justify-content-center store-details-container">
                                 <img src="assets/${store.storeLogo}" alt="${store.storeName}" style="object-fit: cover; width: 70%;">
                                 <p class="mt-4">${store.description}</p>
                                 <ul style="list-style: none; padding: 0;">
