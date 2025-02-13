@@ -633,4 +633,8 @@ a{
     .direction-hero-container img {
         height: 500px !important;
     }
+    .modal{
+        display: flex !important;
+        justify-content: center !important;
+    }
 }
