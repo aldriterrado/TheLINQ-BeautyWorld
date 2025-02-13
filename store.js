@@ -2,38 +2,38 @@ const stores = [
     {
         category: "F&B",
         storeName: "Lao Jiang Superior Soup",
-        headerImage: "",
+        headerImage: "laojiangImg.jpg",
         storeLogo: "laojiangLogo.png",
         time: "10:00am - 11:00pm Daily",
-        modalI: "",
+        modalImg: "laojiang1.png",
         location: "#01-05",
         contact: "+65 8896 7623",
-        description: "<strong>Lao Jiang Superior Soup</strong> is a Singaporean brand established in 2011, specializing in dry-tossed noodles and slow-simmered soups. We take pride in our housemade traditional dishes, such as vinegar pork trotter, and our signature sauces, crafted with authentic local flavors. Serving both locals and tourists, we bring the taste of Singapore’s rich culinary heritage to every meal.",
+        description: "<strong>A Taste of Home</strong> <br><br>Founded in 2011, Lao Jiang Superior Soup has been a place that provides simple yet delicious food with a taste of home. Using a secret recipe thoughtfully formulated, our traditional soup broth is slow boiled using fresh ingredients that are handpicked with care. The result – a rich and full-bodied Lao Jiang Signature Soup that leaves and aromatic aftertaste on your tastebuds. For years, we paired our traditional delicacies with homemade special sauces and simple cooking methods, resulting in each dish having its own unique flavour, especially our popular Signature Superior Soup with Dry Hor Fun and Lao Jiang Zhu Jiao Cu. Friends dining with us can enjoy our nostalgic delicacies with warmth and happiness, revelling in the aroma and taste and remembering the Lao Jiang Superior Soup Brand.",
         website: "https://order.laojiangsuperiorsoup.com/"
     },
     {
         category: "F&B",
         storeName: "Kei Kaisendon",
-        headerImage: "",
-        storeLogo: "",
+        headerImage: "keiImg.jpg",
+        storeLogo: "keiLogo.png",
         time: "",
-        modalImg: "",
+        modalImg: "kei1.jpg",
         location: "#01-06",
         contact: "N/A",
-        description: "",
-        website: ""
+        description: "<strong>Kei Kaisendon</strong> is a Japanese restaurant that serves delicious rice bowls topped with fresh sashimi from the seas of Japan! Every dish is specially designed with the right blend of fish, toppings, and seasonings to give you a unique taste every time. Come discover our Kaisendon for yourself!",
+        website: "https://www.keikaisendon.com/"
     },
     {
         category: "F&B",
         storeName: "Dough Magic",
-        headerImage: "",
+        headerImage: "doughImg.webp",
         storeLogo: "doughLogo.png",
         time: "",
-        modalImg: "",
+        modalImg: "dough1.webp",
         location: "#01-18",
         contact: "",
-        description: "",
-        website:"",
+        description: "<strong>What’s one thing that unites us all? Nostalgia.</strong> <br><br>Ms Yang Guang grew up in the beautiful coastal city Dalian in China. After immigrating to Singapore, she missed the taste of authentic Chinese pastries and found it difficult to adjust to the new and different foods. Staples like Mantou (Plain Bun) and dumplings were especially difficult for her to go without. <br><br>The best cure for homesickness is comfort food. Ms Yang Guang built the brand “扑面而来” to bring out the essence of Chinese pastries. Considering the importance of traditional production methods, she visited Taiwan to further enhance her knowledge. Through this trip, she was able to grasp the art of making Chinese pastries as well as choosing the best ingredients and bringing out the best of their natural flavors. Through countless sleepless nights testing and developing, the recipes were made and are available to you in our stores today.",
+        website:"https://doughmagic.com/",
 
     },
     {
@@ -52,10 +52,10 @@ const stores = [
     {
         category: "F&B",
         storeName: "Toast & Roll by Swee Heng",
-        headerImage: "",
-        storeLogo: "",
+        headerImage: "toastrollImg.jpg",
+        storeLogo: "toastrollLogo.jpg",
         time: "",
-        modalImg: "",
+        modalImg: "toastroll1.png",
         location: "#01-26",
         contact: "N/A",
         description: "",
@@ -65,39 +65,39 @@ const stores = [
     {
         category: "Health & Wellness",
         storeName: "The Braces Practice",
-        headerImage: "",
-        storeLogo: "",
-        time: "",
-        modalImg: "",
+        headerImage: "bracesImg.png",
+        storeLogo: "bracesLogo.jpg",
+        time: "Mon-Fri 11:00am - 8:00pm <br> Sat 9:00am - 5:00pm",
+        modalImg: "braces1.webp",
         location: "#02-01",
-        contact: "N/A",
-        description: "",
-        website: ""
+        contact: "+65 8083 9293",
+        description: 'At <strong>The Braces Practice</strong>, we specialize in orthodontic treatments, offering Invisalign/Metal/Ceramic/Damon braces and for effective teeth straightening. We also provide general dental services, including scaling & polishing, extractions, filings, wisdom tooth surgery, implants, whitening, and root canal treatments. <br><br>Additionally, we offer specialized braces for jaw surgery and custom retainers to maintain alignment post-treatment. <br><br>With tailored Student Packages, we make quality orthodontic care accessible to all. <br><br>Visit <a href="https://www.thebracespractice.com/" style="color: blue;" target="_blank">The Braces Practice</a> to lear more or book an appoinment.',
+        website: "https://www.thebracespractice.com/"
     },
 
     {
         category: "F&B",
         storeName: "Sushiro",
-        headerImage: "",
+        headerImage: "sushiroImg.webp",
         storeLogo: "sushiroLogo.png",
         time: "",
-        modalImg: "",
+        modalImg: "sushiro1.webp",
         location: "#02-02 to 07",
         contact: "N/A",
-        description: "",
-        website: ""
+        description: "<strong>Sushiro Singapore</strong> is part of the internationally renowned Sushiro Group, founded in Japan in 1984. Our journey began with a simple yet ambitious vision: to serve the freshest, most delectable sushi to our customers while honouring the rich traditions of Japanese cuisine. <br><br> Over the years, our dedication to this vision has allowed us to grow and expand, and we are now proud to operate multiple branches across Singapore. Each location is designed to offer a unique dining experience, blending contemporary aesthetics with the timeless beauty of Japanese culture.",
+        website: "https://sushirosg.org/"
     },
 
     {
         category: "Health & Wellness",
         storeName: "New Hair Design",
-        headerImage: "",
+        headerImage: "newhairImg.jpeg",
         storeLogo: "newhairLogo.png",
         time: "11:00am - 8:30pm Daily <br> 10:30am - 7:00pm Sun & PH",
-        modalImg: "",
+        modalImg: "newhair1.jpeg",
         location: "#02-08",
         contact: "N/A",
-        description: "",
+        description: "At <strong>New Hair Design</strong>, we don’t just create hairstyles for our clients—we help them find the most authentic way to express themselves. In this era of individualism, a hairstyle is not just an external enhancement but a reflection of one’s inner strength and self-expression. We believe every hairstyle has its own unique soul, just as each person is one of a kind. <br><br>With years of experience, we know that true beauty comes from inner confidence and fulfillment, not just surface appearance. We always listen carefully, taking time to understand each client’s personal style, lifestyle, and inner desires. Every design is a two-way conversation, aimed at helping our clients discover their most authentic and beautiful selves.",
         website: "https://newhairdesign.com.sg/"
     },
 
@@ -117,7 +117,7 @@ const stores = [
     {
         category: "Health & Wellness",
         storeName: "24/7 Fitness",
-        headerImage: "",
+        headerImage: "247Img.jpg",
         storeLogo: "247Logo.png",
         time: "Always Open",
         modalImg: "2471.jpg",
@@ -130,13 +130,13 @@ const stores = [
     {
         category: "Health & Wellness",
         storeName: "Raffles Medical Clinic",
-        headerImage: "",
+        headerImage: "rafflesImg.jpg",
         storeLogo: "rafflesLogo.jpg",
         time: "Mon-Fri (except Wed) 8:30am - 1:00pm | 2:00pm - 5:30pm | 6:30pm-9:30pm <br><br> Wed 8:30am - 1:00pm | 2:00pm - 5:30pm <br> Sat 8:30am - 1:00pm",
         modalImg: "raffles1.jpg",
         location: "#02-21",
         contact: "N/A",
-        description: "",
+        description: "<strong>Raffles Medical Group (RMG)</strong> <br><br>is a leading integrated private healthcare provider in Asia, operating medical facilities in 14 cities in Singapore, China, Japan, Vietnam and Cambodia. It is the only Singapore-owned private medical provider in Singapore that owns and operates a fully integrated healthcare organisation comprising a tertiary hospital, a network of family medicine and dental clinics, insurance services, Japanese and Traditional Chinese Medicine clinics, and a consumer healthcare division. <br><br>Founded in 1976 with two clinics in central Singapore, RMG has grown consistently over the years to serve over 2 million patients and 7,000 corporate clients each year. RMG has a staff strength of more than 2,700, including close to 430 multi-specialty physicians.",
         website: "http://www.rafflesmedicalgroup.com/"
     },
 ];
@@ -209,7 +209,7 @@ function displayStores(filteredStores) {
                             <!-- Image Section -->
                             <div class="col-md-6 ps-md-5 my-auto d-flex flex-column justify-content-center">
                                 <img src="assets/${store.storeLogo}" alt="${store.storeName}" style="object-fit: cover; width: 70%;">
-                                <p class="">${store.description}</p>
+                                <p class="mt-4">${store.description}</p>
                                 <ul style="list-style: none; padding: 0;">
                                     <li class="d-flex mt-4 mb-3">
                                         <img src="assets/time.png" alt="Time" style="height: 30px;">
