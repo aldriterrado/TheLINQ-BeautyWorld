@@ -509,6 +509,8 @@ a{
         padding-right: 28px !important;
     }
 
+    
+
 
 }
 
@@ -648,5 +650,9 @@ a{
     }
     .store-details-container{
         padding-right: 28px !important;
+    }
+
+    .filter-container{
+        flex-direction: column !important;
     }
 }
