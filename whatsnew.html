@@ -14,7 +14,7 @@
      <!---NAVBAR SECTION--->
      <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-          <a class="navbar-brand" href="#navbarSection"><img src="assets/Logo1.png" alt=""></a>
+          <a class="navbar-brand" href="index.html"><img src="assets/Logo1.png" alt=""></a>
           <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span><i class="fa-solid fa-bars" style="color: white; font-size: 30px;"></i></span>
           </button>
@@ -50,23 +50,179 @@
 
       <!---HERO SECTION--->
       <section id="herosection" class="container-fluid p-0">
-        <div class="whatsnew-hero-container">
-            <img src="assets/hero3.jpg" alt="">
-            <div class="w-caption text-center">
-                <h1 style="color: #FFF0D9; font-size: clamp(1rem, 5vw, 3rem);">Stay Tuned for <br> <span style="font-family: 'Kaushan Script'; color: #CCB186; font-size: clamp(2rem, 10vw, 8rem);">Exciting Updates!</span></h1>
-                <p class="text-white fs-5 mt-4">We’re working on something special. Check back soon to discover the latest happenings at The Linq @ Beauty World Mall!</p>
-            </div>        
+        <div class="direction-hero-container">
+            <img src="assets/whatsnewHero.png" alt="">
+            <div class="s-caption text-center">
+              <h1 style="color: #FFF0D9;">Latest Updates</h1>
+            </div>           
         </div>
-        
+        <div id="breadcrumb-section" class="d-flex justify-content-center p-3" style="background-color: #CCB186;">
+            <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                <ol class="breadcrumb  my-auto">
+                  <li class="breadcrumb-item fs-5 text-white"><a href="index.html" style="text-decoration: none; color: white !important;">Home</a></li>
+                  <li class="breadcrumb-item active text-white fs-5" aria-current="page" style="color: #3B3A3E !important;">What's New</li>
+                </ol>
+              </nav>
+        </div>
       </section>
       <!---HERO SECTION--->
+
+      <!---FILTER SECTION--->
+      <section id="filter-section" class="container pt-2 pb-5">   
+        <!---PRODUCT SECTION--->
+        <div class="container mt-5 pt-4 pb-2 ps-0 pe-0">
+            <div class="row d-flex justify-content-center align-items-center" id="store-container">
+                <div class="col-mt-5">
+                  <div class="card mb-3 shadow" style="width: 100%; max-height: 900px;">
+                    <div class="row g-0">
+                      <div class="col-lg-7">
+                        <img src="assets/eventImg.png" class="img-fluid rounded-start" alt="..." style="height: 100%; object-fit: cover;">
+                      </div>
+                      <div class="col-lg-5 p-5 my-auto">
+                        <div class="card-body">
+                          <div class="row d-flex mb-4">
+                            <div class="col-6">
+                              <img class="me-2" src="assets/calendar.png" alt="" style="height: 30px;">
+                              <span>28th February</span>
+                            </div>
+
+                            <div class="col-6">
+                              <img class="me-2" src="assets/time.png" alt="" style="height: 30px;">
+                              <span>Time</span>
+                            </div>
+                          </div>
+                          <h2 class="card-title">The LINQ @ Beauty World <br><strong class="fs-1" style="font-family: 'Kaushan Script'; color: #CCB186;">Soft Opening</strong></h2>
+                          <p class="card-text mt-4">The LINQ @ Beauty World is an exciting new development located in the vibrant Beauty World precinct, offering a mix of residential, retail, and lifestyle spaces. With its soft opening, the development introduces its offerings to the public with limited access and availability. The soft opening period is a time for businesses within The LINQ to fine-tune their operations, while allowing early visitors to experience the spaces and services before the grand opening.</p>
+                          <button class="btn btn-primary mt-4 mb-4 shadow-sm" data-bs-toggle="modal" data-bs-target="#storeModal${index}" style="background-color: #3B3A3E !important; border-style: none !important; width: 150px;">Learn more</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="pagination-container" class="d-flex justify-content-center pagination gap-5 pb-5">
+            
+        </div>
+     </section>
+      <!---FILTER SECTION--->
+
+       <!---WHERE TO FIND US SECTION--->
+    <section id="contact" class="container-fluid overflow-hidden" style="background-color:#FEF7ED">
+      <div class="container">
+        <div class="where-to-find-us row">
+          <div class="contact-details col-md-6 my-auto">
+            <h1 class="fw-bold where-to-find display-5" style="color: #3B3A3E;" data-aos="fade-down" data-aos-duration="1000">Contact</h1>
+            <div class="row mt-5 mb-5">
+              <div class="col-2 mx-auto" data-aos="fade-right" data-aos-duration="500">
+                <img class="img-fluid" src="assets/location.png" alt="">
+              </div>
+              <div class="col-10 my-auto">
+                <p class="mb-0" style="font-size: 18px;" data-aos="fade-left" data-aos-duration="500">118 Upper Bukit Timah Rd, Singapore 588173</p>
+              </div>
+            </div>
+
+            <div class="row mb-5">
+              <div class="col-2 mx-auto" data-aos="fade-right" data-aos-duration="500">
+                <img class="img-fluid" src="assets/time.png" alt="">
+              </div>
+              <div class="col-10 my-auto">
+                <p class="mb-0" style="font-size: 18px;" data-aos="fade-left" data-aos-duration="500">10:00am - 10:00pm</p>
+              </div>
+            </div>
+
+            <div class="row mb-5">
+              <div class="col-2 mx-auto">
+                <img class="img-fluid" src="assets/email.png" alt="" data-aos="fade-right" data-aos-duration="500">
+              </div>
+              <div class="col-10 my-auto">
+                <p class="mb-0" style="font-size: 18px;" data-aos="fade-left" data-aos-duration="500">leasing@thebeautyworld.sg</p>
+              </div>
+            </div>
+
+            <a href="direction.html">
+              <button class="p-3 btnDirections fs-5">Directions<i class="fa-solid fa-arrow-right fa-beat-fade ms-3 fs-5"></i></button>
+            </a>
+          </div>
+          <div class="map-container col-md-6">
+            <iframe class="pb-0 thelinqMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7256480256106!2d103.77376977599612!3d1.3409603986463348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da11000e9edf33%3A0x6c582cdf3407b9a0!2sThe%20LINQ%20%40%20Beauty%20World!5e0!3m2!1sen!2ssg!4v1737638004234!5m2!1sen!2ssg" width="1200" height="900" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" data-aos="fade-left" data-aos-duration="1000"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---WHERE TO FIND US SECTION--->
+
+    <!---FOOTER SECTION--->
+    <footer class="container-fluid ps-0 pe-0" style="background-color: #3B3A3E;">
+      <div class="container pt-5 pb-5">
+        <div class="footer-container row mt-5 mb-5">
+          <div class="footer-header col-md-6">
+              <p class="text-white mt-3 mb-4 fs-4">Another Project by<br> <a class="fw-bold" href="http://www.bbr.com.sg/" target="_blank" style="text-decoration: none; cursor: pointer; color: #226799 !important;">BBR Holdings (S) Limited</a></p>
+              <a href="https://www.facebook.com/profile.php?id=61573103366837" target="_blank">
+                <button class="me-3 facebookBtn p-2"><i class="fa-brands fa-facebook me-4"></i>Facebook</button>
+              </a>
+              <a href="https://www.instagram.com/thelinqbeautyworld/?igsh=MWQxNGJpazRnMWx2bA%3D%3D&utm_source=qr#" target="_blank">
+                <button class="p-2 instagramBtn"><i class="fa-brands fa-instagram me-4"></i>Instagram</button>
+              </a>
+          </div>
+          <div class="footer-links col-md-6">
+            <h4 class="text-white">Quick Links</h3>
+              <div class="row mt-3" style="color: #CCB186;">
+                <div class="col-3">
+                  <a class="footer-a" href="#" style="color: #CCB186;">
+                    <span class="fs-5 footer-nav">Home</span>
+                  </a>
+                </div>
+
+                <div class="col-4">
+                  <a class="footer-a" href="direction.html" style="color: #CCB186;">
+                    <span class="fs-5 footer-nav">How to Get Here</span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="row mt-2" style="color: #CCB186;">
+                <div class="col-3">
+                  <a class="footer-a" href="whatsnew.html" style="color: #CCB186;">
+                    <span class="fs-5 footer-nav">What's New</span>
+                  </a>
+                </div>
+
+                <div class="col-4">
+                  <a class="footer-a" href="#" style="color: #CCB186;">
+                    <span class="fs-5 footer-nav">Legal</span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="row mt-2" style="color: #CCB186;">
+                <div class="col-3">
+                  <a class="footer-a" href="store.html" style="color: #CCB186;">
+                    <span class="fs-5 footer-nav">Stores</span>
+                  </a>
+                </div>
+
+                <div class="col-4">
+                  <a class="footer-a" href="#" style="color: #CCB186;">
+                    <span class="fs-5 footer-nav">Privacy</span>
+                  </a>
+                </div>
+              </div>
+              <p class="mt-3 fs-5 text-secondary all-rights-reserve">2025 The LINQ @ Beauty World. All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!---FOOTER SECTION--->
+    
 
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="main.js"></script>
-    <script src="store.js"></script>
+    <script src="whatsnew.js"></script>
     <script>
         AOS.init();
     </script>
