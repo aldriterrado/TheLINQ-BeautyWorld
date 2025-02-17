@@ -132,7 +132,7 @@ const stores = [
         storeName: "Raffles Medical Clinic",
         headerImage: "rafflesImg.jpg",
         storeLogo: "rafflesLogo.jpg",
-        time: "Monday-Friday (except Wednesday) 8:30am - 1:00pm | 2:00pm - 5:30pm | 6:30pm-9:30pm <br><br> Wednesday 8:30am - 1:00pm | 2:00pm - 5:30pm <br> Sat 8:30am - 1:00pm",
+        time: "Monday-Friday (except Wednesday) 8:30am - 1:00pm | 2:00pm - 5:30pm | 6:30pm-9:30pm <br> Wednesday 8:30am - 1:00pm | 2:00pm - 5:30pm <br> Sat 8:30am - 1:00pm",
         modalImg: "raffles1.jpg",
         location: "#02-21",
         contact: "TBA",
