@@ -175,10 +175,10 @@ function displayStores(filteredStores) {
         storeCard.classList.add("col-lg-4", "mb-5");
         storeCard.innerHTML = `
             <div class="card shadow-sm" style="width: 100%; height: 700px;">
-                <img src="assets/${store.headerImage}" class="card-img-top" alt="${store.storeName}" style="width: 100% !important; height: 300px !important; object-fit: cover !important;">
+                <img src="assets/${store.headerImage}" class="card-img-top" alt="${store.storeName}" style="width: 100% !important; height: 250px !important; object-fit: cover !important;">
                 <div class="card-body ps-4">
                     <div class="card-title d-flex justify-content-center align-item-center mb-3">
-                        <img src="assets/${store.storeLogo}" alt="${store.storeName}" style="object-fit: cover; width: 200px">
+                        <img src="assets/${store.storeLogo}" alt="${store.storeName}" style="width: 90%; height: 100px; object-fit: cover;">
                     </div>
                     <ul style="list-style: none; padding: 0;">
                         <li class="d-flex mb-3">
@@ -189,10 +189,10 @@ function displayStores(filteredStores) {
                             <img src="assets/location.png" alt="Location" style="height: 30px;">
                             <p class="mb-0 ms-2 d-flex align-items-center">${store.location}</p>
                         </li>
-                        <li class="d-flex mb-3">
+                        <!---- <li class="d-flex mb-3">
                             <img src="assets/phone.png" alt="Contact" style="height: 30px;">
                             <p class="mb-0 ms-2 d-flex align-items-center">${store.contact}</p>
-                        </li>
+                        </li> ---!>
                     </ul>
                     <button class="btn btn-primary mt-4 mb-4 shadow-sm" data-bs-toggle="modal" data-bs-target="#storeModal${index}" style="background-color: #3B3A3E !important; border-style: none !important; width: 150px;">Learn more</button>
                 </div>
