@@ -46,7 +46,7 @@ a{
 
 .c-caption h1{
     font-family: "Kaushan Script";
-    font-size: clamp(2rem, 10vw, 10rem);
+    font-size: clamp(2rem, 10vw, 8rem);
     color: #fcddae;
     margin-bottom: 60px;
 }
