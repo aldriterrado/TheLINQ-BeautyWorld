@@ -4,7 +4,7 @@ const stores = [
         storeName: "Lao Jiang Superior Soup",
         headerImage: "laojiangImg.jpg",
         storeLogo: "laojiangLogo.png",
-        time: "Monday-Sunday 10:00am - 11:00pm",
+        time: "<p>Monday - Sunday <br> 10:00am - 11:00pm</p>",
         modalImg: "laojiang1.png",
         location: "#01-05",
         contact: "+65 8896 7623",
@@ -42,7 +42,7 @@ const stores = [
         headerImage: "tomoroImg.jpg",
         storeLogo: "tomoroLogo.png",
         modalImg: "tomoro1.jpg",
-        time: "Monday-Sunday 8:00am - 9:00pm",
+        time: "Monday - Sunday <br> 8:00am - 9:00pm",
         location: "#01-25",
         contact: "TBA",
         description: "<strong>TOMORO COFFEE</strong> specialises in speciality coffee and aims to become a world-class coffee brand. TOMORO refers to “tomorrow” and it means “embrace the goodness and yearn for tomorrow”. TOMORO strives to make every good cup of coffee with heart and encourage everyone to follow their heart bravely, feel the life with heart while yearning for tomorrow.",
@@ -67,10 +67,11 @@ const stores = [
         storeName: "The Braces Practice",
         headerImage: "bracesImg.png",
         storeLogo: "bracesLogo.jpg",
-        time: "Monday-Friday 11:00am - 8:00pm <br> Saturday 9:00am - 5:00pm",
+        time: '<p>Monday - Friday <br> 11:00am - 8:00pm <br><br> Saturday <br> 9:00am - 5:00pm <br><br> <span style="color: maroon;">*Store is closed on Sunday</span></p>',
         modalImg: "braces1.webp",
         location: "#02-01",
         contact: "+65 8083 9293",
+        closingDate: "Sunday",
         description: 'At <strong>The Braces Practice</strong>, we specialize in orthodontic treatments, offering Invisalign/Metal/Ceramic/Damon braces and for effective teeth straightening. We also provide general dental services, including scaling & polishing, extractions, filings, wisdom tooth surgery, implants, whitening, and root canal treatments. <br><br>Additionally, we offer specialized braces for jaw surgery and custom retainers to maintain alignment post-treatment. <br><br>With tailored Student Packages, we make quality orthodontic care accessible to all. <br><br>Visit <a href="https://www.thebracespractice.com/" style="color: blue;" target="_blank">The Braces Practice</a> to lear more or book an appoinment.',
         website: "https://www.thebracespractice.com/"
     },
@@ -93,7 +94,7 @@ const stores = [
         storeName: "New Hair Design",
         headerImage: "newhairImg.jpeg",
         storeLogo: "newhairLogo.png",
-        time: "Monday-Friday 11:00am - 8:30pm <br> Sunday & Public Holiday 10:30am - 7:00pm",
+        time: '<p>Monday - Friday <br> 11:00am - 8:30pm <br><br> Sunday & Public Holiday <br> 10:30am - 7:00pm <br><br> <span style="color: maroon;">*Store is closed on Saturday</span></p>',
         modalImg: "newhair1.jpeg",
         location: "#02-08",
         contact: "TBA",
@@ -105,9 +106,9 @@ const stores = [
         category: "Health & Wellness",
         storeName: "Joyre TCMedi Spa",
         headerImage: "joyreImg.jpg",
-        storeLogo: "joyreLogo.png",
+        storeLogo: "joyreLogo.jpg",
         modalImg: "joyre1.jpg",
-        time: "Monday-Sunday 10:00am - 9:00pm",
+        time: "Monday - Sunday <br> 10:00am - 9:00pm",
         location: "#02-10",
         contact: "+65 9836 6965",
         description: "<strong>Joyre</strong> is a pioneer in integrating Traditional Chinese Medicine with modern spa treatments and beauty aesthetics services while using advanced biomedical technology to deliver personalised treatments that match each individual’s body constitution, and lifestyle to bring about a sense of balance and total wellness.",
@@ -119,7 +120,7 @@ const stores = [
         storeName: "24/7 Fitness",
         headerImage: "247Img.jpg",
         storeLogo: "247Logo.png",
-        time: "Always Open",
+        time: "Monday - Sunday <br> 24/7",
         modalImg: "2471.jpg",
         location: "#02-11 to #02-17",
         contact: "TBA",
@@ -132,7 +133,7 @@ const stores = [
         storeName: "Raffles Medical Clinic",
         headerImage: "rafflesImg.jpg",
         storeLogo: "rafflesLogo.jpg",
-        time: "Monday-Friday (except Wednesday) 8:30am - 1:00pm | 2:00pm - 5:30pm | 6:30pm-9:30pm <br> Wednesday 8:30am - 1:00pm | 2:00pm - 5:30pm <br> Sat 8:30am - 1:00pm",
+        time: '<p>Monday - Friday (except Wednesday) <br> 8:30am - 1:00pm <br> 2:00pm - 5:30pm <br> 6:30pm - 9:30pm <br><br> Wednesday <br> 8:30am - 1:00pm <br> 2:00pm - 5:30pm <br><br> Satuday <br> 8:30am - 1:00pm <br><br> <span style="color: maroon;">*Store is closed on Sunday</span></p>',
         modalImg: "raffles1.jpg",
         location: "#02-21",
         contact: "TBA",
@@ -174,13 +175,18 @@ function displayStores(filteredStores) {
         const storeCard = document.createElement("div");
         storeCard.classList.add("col-lg-4", "mb-5");
         storeCard.innerHTML = `
-            <div class="card shadow-sm" style="width: 100%; height: 700px;">
+            <div class="card shadow-sm" style="width: 100%;">
                 <img src="assets/${store.headerImage}" class="card-img-top" alt="${store.storeName}" style="width: 100% !important; height: 250px !important; object-fit: cover !important;">
                 <div class="card-body ps-4">
-                    <div class="card-title d-flex justify-content-center align-item-center mb-3">
-                        <img src="assets/${store.storeLogo}" alt="${store.storeName}" style="width: 90%; height: 100px; object-fit: cover;">
+                    <div class="card-title d-flex justify-content-center align-item-center mb-4" style="height: 75px;">
+                        <img src="assets/${store.storeLogo}" alt="${store.storeName}" style="object-fit: cover;">
                     </div>
+                    <div style="height: 400px">
                     <ul style="list-style: none; padding: 0;">
+                        <li class="d-flex mb-3">
+                            <img src="assets/store.png" alt="Time" style="height: 30px;">
+                            <p class="mb-0 ms-2 d-flex align-items-center">${store.storeName}</p>
+                        </li>
                         <li class="d-flex mb-3">
                             <img src="assets/time.png" alt="Time" style="height: 30px;">
                             <p class="mb-0 ms-2 d-flex align-items-center">${store.time}</p>
@@ -194,7 +200,8 @@ function displayStores(filteredStores) {
                             <p class="mb-0 ms-2 d-flex align-items-center">${store.contact}</p>
                         </li> ---!>
                     </ul>
-                    <button class="btn btn-primary mt-4 mb-4 shadow-sm" data-bs-toggle="modal" data-bs-target="#storeModal${index}" style="background-color: #3B3A3E !important; border-style: none !important; width: 150px;">Learn more</button>
+                    </div>
+                    <button class="btn btn-primary mt-5 mb-4 shadow-sm" data-bs-toggle="modal" data-bs-target="#storeModal${index}" style="background-color: #3B3A3E !important; border-style: none !important; width: 150px;">Learn more</button>
                 </div>
             </div>
 
