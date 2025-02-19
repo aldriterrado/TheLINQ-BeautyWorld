@@ -16,7 +16,7 @@ const stores = [
         storeName: "Kei Kaisendon",
         headerImage: "keiImg.jpg",
         storeLogo: "keiLogo.png",
-        time: '<p>Monday - Sunday <br> 11:00am - 10:00pm <br><br> <span style="color: maroon;">*Last Order (9:30pm)</span></p>',
+        time: '<p>Monday - Sunday <br> 11:00am - 10:00pm</p>',
         modalImg: "kei1.jpg",
         location: "#01-06",
         contact: "TBA",
