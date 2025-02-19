@@ -61,7 +61,7 @@ const stores = [
         location: "#01-26",
         contact: "TBA",
         description: "Toast & Roll focuses on quality, using premium ingredients like Japanese flour and French butter. While Westies can conveniently visit, others may hope for more outlets to open across Singapore in the future",
-        website: ""
+        website: "https://www.instagram.com/toast_rollsg/"
     },
 
     {
@@ -124,7 +124,7 @@ const stores = [
         storeLogo: "247Logo.png",
         time: "Monday - Sunday <br> Open at all times",
         modalImg: "2471.jpg",
-        location: "#02-11 to #02-17",
+        location: "#02-11 to 17",
         contact: "TBA",
         description: "24/7 FITNESS are proud to redefine the fitness experience by offering state-of-the-art fitness facilities with unparalleled convenience. Membership grants 24-hour access to all our facilities, spanning Singapore, Hong Kong, Chinese Mainland, Macau, Taiwan and beyond. Our smart facial recognition gym system ensures seamless access to our facilities without any joining fee or prepayment.",
         website: "https://sg.247.fitness/"
