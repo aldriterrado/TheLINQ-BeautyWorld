@@ -8,7 +8,7 @@ const stores = [
         modalImg: "laojiang1.png",
         location: "#01-05",
         contact: "+65 8896 7623",
-        description: "<strong>A Taste of Home</strong> <br><br>Founded in 2011, Lao Jiang Superior Soup has been a place that provides simple yet delicious food with a taste of home. Using a secret recipe thoughtfully formulated, our traditional soup broth is slow boiled using fresh ingredients that are handpicked with care. The result – a rich and full-bodied Lao Jiang Signature Soup that leaves and aromatic aftertaste on your tastebuds. For years, we paired our traditional delicacies with homemade special sauces and simple cooking methods, resulting in each dish having its own unique flavour, especially our popular Signature Superior Soup with Dry Hor Fun and Lao Jiang Zhu Jiao Cu. Friends dining with us can enjoy our nostalgic delicacies with warmth and happiness, revelling in the aroma and taste and remembering the Lao Jiang Superior Soup Brand.",
+        description: "Lao Jiang Superior Soup is a Singaporean brand established in 2011, specializing in dry-tossed noodles and slow-simmered soups. We take pride in our housemade traditional dishes, such as vinegar pork trotter, and our signature sauces, crafted with authentic local flavors. Serving both locals and tourists, we bring the taste of Singapore’s rich culinary heritage to every meal.",
         website: "https://order.laojiangsuperiorsoup.com/"
     },
     {
@@ -16,11 +16,13 @@ const stores = [
         storeName: "Kei Kaisendon",
         headerImage: "keiImg.jpg",
         storeLogo: "keiLogo.png",
-        time: "Coming Soon",
+        time: '<p>Monday - Sunday <br> 11:00am - 10:00pm <br><br> <span style="color: maroon;">*Last Order (9:30pm)</span></p>',
         modalImg: "kei1.jpg",
         location: "#01-06",
         contact: "TBA",
-        description: "<strong>Kei Kaisendon</strong> is a Japanese restaurant that serves delicious rice bowls topped with fresh sashimi from the seas of Japan! Every dish is specially designed with the right blend of fish, toppings, and seasonings to give you a unique taste every time. Come discover our Kaisendon for yourself!",
+        description: `Kei Kaisendon is an authentic Japanese
+                    restaurant that serves Kaisendon [Sashimi rice bowl] and various types of doburies, udon and side dishes.
+                        `,        
         website: "https://www.keikaisendon.com/"
     },
     {
@@ -32,7 +34,7 @@ const stores = [
         modalImg: "dough1.webp",
         location: "#01-18",
         contact: "TBA",
-        description: "<strong>What’s one thing that unites us all? Nostalgia.</strong> <br><br>Ms Yang Guang grew up in the beautiful coastal city Dalian in China. After immigrating to Singapore, she missed the taste of authentic Chinese pastries and found it difficult to adjust to the new and different foods. Staples like Mantou (Plain Bun) and dumplings were especially difficult for her to go without. <br><br>The best cure for homesickness is comfort food. Ms Yang Guang built the brand “扑面而来” to bring out the essence of Chinese pastries. Considering the importance of traditional production methods, she visited Taiwan to further enhance her knowledge. Through this trip, she was able to grasp the art of making Chinese pastries as well as choosing the best ingredients and bringing out the best of their natural flavors. Through countless sleepless nights testing and developing, the recipes were made and are available to you in our stores today.",
+        description: "What’s one thing that unites us all? Nostalgia. <br><br>Ms Yang Guang grew up in the beautiful coastal city Dalian in China. After immigrating to Singapore, she missed the taste of authentic Chinese pastries and found it difficult to adjust to the new and different foods. Staples like Mantou (Plain Bun) and dumplings were especially difficult for her to go without. <br><br>The best cure for homesickness is comfort food. Ms Yang Guang built the brand “扑面而来” to bring out the essence of Chinese pastries. Considering the importance of traditional production methods, she visited Taiwan to further enhance her knowledge. Through this trip, she was able to grasp the art of making Chinese pastries as well as choosing the best ingredients and bringing out the best of their natural flavors. Through countless sleepless nights testing and developing, the recipes were made and are available to you in our stores today.",
         website:"https://doughmagic.com/",
 
     },
@@ -45,7 +47,7 @@ const stores = [
         time: "Monday - Sunday <br> 8:00am - 9:00pm",
         location: "#01-25",
         contact: "TBA",
-        description: "<strong>TOMORO COFFEE</strong> specialises in speciality coffee and aims to become a world-class coffee brand. TOMORO refers to “tomorrow” and it means “embrace the goodness and yearn for tomorrow”. TOMORO strives to make every good cup of coffee with heart and encourage everyone to follow their heart bravely, feel the life with heart while yearning for tomorrow.",
+        description: "TOMORO COFFEE specialises in speciality coffee and aims to become a world-class coffee brand. TOMORO refers to “tomorrow” and it means “embrace the goodness and yearn for tomorrow”. TOMORO strives to make every good cup of coffee with heart and encourage everyone to follow their heart bravely, feel the life with heart while yearning for tomorrow.",
         website: "https://www.tomoro-coffee.sg"
     },
 
@@ -55,10 +57,10 @@ const stores = [
         headerImage: "toastrollImg.jpg",
         storeLogo: "toastrollLogo.jpg",
         time: "Coming Soon",
-        modalImg: "toastroll1.png",
+        modalImg: "toastroll1.jpg",
         location: "#01-26",
         contact: "TBA",
-        description: "",
+        description: "Toast & Roll focuses on quality, using premium ingredients like Japanese flour and French butter. While Westies can conveniently visit, others may hope for more outlets to open across Singapore in the future",
         website: ""
     },
 
@@ -72,7 +74,7 @@ const stores = [
         location: "#02-01",
         contact: "+65 8083 9293",
         closingDate: "Sunday",
-        description: 'At <strong>The Braces Practice</strong>, we specialize in orthodontic treatments, offering Invisalign/Metal/Ceramic/Damon braces and for effective teeth straightening. We also provide general dental services, including scaling & polishing, extractions, filings, wisdom tooth surgery, implants, whitening, and root canal treatments. <br><br>Additionally, we offer specialized braces for jaw surgery and custom retainers to maintain alignment post-treatment. <br><br>With tailored Student Packages, we make quality orthodontic care accessible to all. <br><br>Visit <a href="https://www.thebracespractice.com/" style="color: blue;" target="_blank">The Braces Practice</a> to lear more or book an appoinment.',
+        description: 'The Braces Practice specialize in orthodontic treatments, offering Invisalign/Metal/Ceramic/Damon braces and for effective teeth straightening. We also provide general dental services, including scaling & polishing, extractions, filings, wisdom tooth surgery, implants, whitening, and root canal treatments. <br><br>Additionally, we offer specialized braces for jaw surgery and custom retainers to maintain alignment post-treatment. <br><br>With tailored Student Packages, we make quality orthodontic care accessible to all. <br><br>Visit <a href="https://www.thebracespractice.com/" style="color: blue;" target="_blank">The Braces Practice</a> to lear more or book an appoinment.',
         website: "https://www.thebracespractice.com/"
     },
 
@@ -85,7 +87,7 @@ const stores = [
         modalImg: "sushiro1.webp",
         location: "#02-02 to 07",
         contact: "TBA",
-        description: "<strong>Sushiro Singapore</strong> is part of the internationally renowned Sushiro Group, founded in Japan in 1984. Our journey began with a simple yet ambitious vision: to serve the freshest, most delectable sushi to our customers while honouring the rich traditions of Japanese cuisine. <br><br> Over the years, our dedication to this vision has allowed us to grow and expand, and we are now proud to operate multiple branches across Singapore. Each location is designed to offer a unique dining experience, blending contemporary aesthetics with the timeless beauty of Japanese culture.",
+        description: "Sushiro Singapore is part of the internationally renowned Sushiro Group, founded in Japan in 1984. Our journey began with a simple yet ambitious vision: to serve the freshest, most delectable sushi to our customers while honouring the rich traditions of Japanese cuisine. <br><br> Over the years, our dedication to this vision has allowed us to grow and expand, and we are now proud to operate multiple branches across Singapore. Each location is designed to offer a unique dining experience, blending contemporary aesthetics with the timeless beauty of Japanese culture.",
         website: "https://sushirosg.org/"
     },
 
@@ -94,11 +96,11 @@ const stores = [
         storeName: "New Hair Design",
         headerImage: "newhairImg.jpeg",
         storeLogo: "newhairLogo.png",
-        time: '<p>Monday - Friday <br> 11:00am - 8:30pm <br><br> Sunday & Public Holiday <br> 10:30am - 7:00pm <br><br> <span style="color: maroon;">*Store is closed on Saturday</span></p>',
+        time: '<p>Monday - Saturday <br> 11:00am - 8:30pm <br><br> Sunday & Public Holiday <br> 10:30am - 7:00pm</p>',
         modalImg: "newhair1.jpeg",
         location: "#02-08",
         contact: "TBA",
-        description: "At <strong>New Hair Design</strong>, we don’t just create hairstyles for our clients—we help them find the most authentic way to express themselves. In this era of individualism, a hairstyle is not just an external enhancement but a reflection of one’s inner strength and self-expression. We believe every hairstyle has its own unique soul, just as each person is one of a kind. <br><br>With years of experience, we know that true beauty comes from inner confidence and fulfillment, not just surface appearance. We always listen carefully, taking time to understand each client’s personal style, lifestyle, and inner desires. Every design is a two-way conversation, aimed at helping our clients discover their most authentic and beautiful selves.",
+        description: "New Hair Design don’t just create hairstyles for our clients—we help them find the most authentic way to express themselves. In this era of individualism, a hairstyle is not just an external enhancement but a reflection of one’s inner strength and self-expression. We believe every hairstyle has its own unique soul, just as each person is one of a kind. <br><br>With years of experience, we know that true beauty comes from inner confidence and fulfillment, not just surface appearance. We always listen carefully, taking time to understand each client’s personal style, lifestyle, and inner desires. Every design is a two-way conversation, aimed at helping our clients discover their most authentic and beautiful selves.",
         website: "https://newhairdesign.com.sg/"
     },
 
@@ -111,7 +113,7 @@ const stores = [
         time: "Monday - Sunday <br> 10:00am - 9:00pm",
         location: "#02-10",
         contact: "+65 9836 6965",
-        description: "<strong>Joyre</strong> is a pioneer in integrating Traditional Chinese Medicine with modern spa treatments and beauty aesthetics services while using advanced biomedical technology to deliver personalised treatments that match each individual’s body constitution, and lifestyle to bring about a sense of balance and total wellness.",
+        description: "Joyre is a pioneer in integrating Traditional Chinese Medicine with modern spa treatments and beauty aesthetics services while using advanced biomedical technology to deliver personalised treatments that match each individual’s body constitution, and lifestyle to bring about a sense of balance and total wellness.",
         website: "https://joyretcmedispa.com/"
     },
 
@@ -120,11 +122,11 @@ const stores = [
         storeName: "24/7 Fitness",
         headerImage: "247Img.jpg",
         storeLogo: "247Logo.png",
-        time: "Monday - Sunday <br> 24/7",
+        time: "Monday - Sunday <br> Open at all times",
         modalImg: "2471.jpg",
         location: "#02-11 to #02-17",
         contact: "TBA",
-        description: "At <strong>24/7 FITNESS</strong>, we are proud to redefine the fitness experience by offering state-of-the-art fitness facilities with unparalleled convenience. Membership grants 24-hour access to all our facilities, spanning Singapore, Hong Kong, Chinese Mainland, Macau, Taiwan and beyond. Our smart facial recognition gym system ensures seamless access to our facilities without any joining fee or prepayment.",
+        description: "24/7 FITNESS are proud to redefine the fitness experience by offering state-of-the-art fitness facilities with unparalleled convenience. Membership grants 24-hour access to all our facilities, spanning Singapore, Hong Kong, Chinese Mainland, Macau, Taiwan and beyond. Our smart facial recognition gym system ensures seamless access to our facilities without any joining fee or prepayment.",
         website: "https://sg.247.fitness/"
     },
 
@@ -137,7 +139,7 @@ const stores = [
         modalImg: "raffles1.jpg",
         location: "#02-21",
         contact: "TBA",
-        description: "<strong>Raffles Medical Group (RMG)</strong> <br><br>is a leading integrated private healthcare provider in Asia, operating medical facilities in 14 cities in Singapore, China, Japan, Vietnam and Cambodia. It is the only Singapore-owned private medical provider in Singapore that owns and operates a fully integrated healthcare organisation comprising a tertiary hospital, a network of family medicine and dental clinics, insurance services, Japanese and Traditional Chinese Medicine clinics, and a consumer healthcare division. <br><br>Founded in 1976 with two clinics in central Singapore, RMG has grown consistently over the years to serve over 2 million patients and 7,000 corporate clients each year. RMG has a staff strength of more than 2,700, including close to 430 multi-specialty physicians.",
+        description: "Raffles Medical Group (RMG) is a leading integrated private healthcare provider in Asia, operating medical facilities in 14 cities in Singapore, China, Japan, Vietnam and Cambodia. It is the only Singapore-owned private medical provider in Singapore that owns and operates a fully integrated healthcare organisation comprising a tertiary hospital, a network of family medicine and dental clinics, insurance services, Japanese and Traditional Chinese Medicine clinics, and a consumer healthcare division. <br><br>Founded in 1976 with two clinics in central Singapore, RMG has grown consistently over the years to serve over 2 million patients and 7,000 corporate clients each year. RMG has a staff strength of more than 2,700, including close to 430 multi-specialty physicians.",
         website: "http://www.rafflesmedicalgroup.com/"
     },
 ];
@@ -215,8 +217,9 @@ function displayStores(filteredStores) {
                         <div class="row modal-body d-flex pe-0 pt-2 pb-5">
                             <!-- Image Section -->
                             <div class="col-md-6 ps-md-5 my-auto d-flex flex-column justify-content-center store-details-container">
-                                <img src="assets/${store.storeLogo}" alt="${store.storeName}" style="object-fit: cover; width: 70%;">
-                                <p class="mt-4">${store.description}</p>
+                                <img class="mb-3" src="assets/${store.storeLogo}" alt="${store.storeName}" style="object-fit: cover; width: 70%;">
+                                <h5><strong>${store.storeName}</strong></h5>
+                                <p class="mt-3">${store.description}</p>
                                 <ul style="list-style: none; padding: 0;">
                                     <li class="d-flex mt-4 mb-3">
                                         <img src="assets/time.png" alt="Time" style="height: 30px;">
@@ -226,10 +229,10 @@ function displayStores(filteredStores) {
                                         <img src="assets/location.png" alt="Location" style="height: 30px;">
                                         <p class="mb-0 ms-2 d-flex align-items-center">${store.location}</p>
                                     </li>
-                                    <li class="d-flex mb-3">
+                                    <!----<li class="d-flex mb-3">
                                         <img src="assets/phone.png" alt="Contact" style="height: 30px;">
                                         <p class="mb-0 ms-2 d-flex align-items-center">${store.contact}</p>
-                                    </li>
+                                    </li>----!>
                                     <li class="d-flex mb-3">
                                         <img src="assets/website.png" alt="Contact" style="height: 30px;">
                                         <p class="mb-0 ms-2 d-flex align-items-center"><a href=${store.website} target="_blank" style="color: blue;">${store.website}</a></p>
