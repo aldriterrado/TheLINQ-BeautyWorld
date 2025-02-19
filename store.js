@@ -90,7 +90,7 @@ const stores = [
     },
 
     {
-        category: "Health & Wellness",
+        category: "Beauty & Personal Care",
         storeName: "New Hair Design",
         headerImage: "newhairImg.jpeg",
         storeLogo: "newhairLogo.png",
@@ -334,8 +334,8 @@ document.getElementById("allShops").addEventListener("click", function () {
 });
 
 // Fashion & Apparel button
-document.getElementById("fashionApparel").addEventListener("click", function () {
-    filteredStores = stores.filter(store => store.category === "Fashion & Apparel");
+document.getElementById("beautyPersonal").addEventListener("click", function () {
+    filteredStores = stores.filter(store => store.category === "Beauty & Personal Care");
     currentPage = 1;
     displayStores(filteredStores);
 
