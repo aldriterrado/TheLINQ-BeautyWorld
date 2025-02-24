@@ -6,6 +6,10 @@ body {
     font-family: "Inria Serif";
 }
 
+html {
+    scroll-padding-top: 170px; /* Adjust this based on your header height */
+  }
+
 
 .navbar-brand img{
     height: 150px;

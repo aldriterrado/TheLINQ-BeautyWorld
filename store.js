@@ -34,7 +34,7 @@ const stores = [
         modalImg: "dough1.webp",
         location: "#01-18",
         contact: "TBA",
-        description: "What’s one thing that unites us all? Nostalgia. <br><br>Ms Yang Guang grew up in the beautiful coastal city Dalian in China. After immigrating to Singapore, she missed the taste of authentic Chinese pastries and found it difficult to adjust to the new and different foods. Staples like Mantou (Plain Bun) and dumplings were especially difficult for her to go without. <br><br>The best cure for homesickness is comfort food. Ms Yang Guang built the brand “扑面而来” to bring out the essence of Chinese pastries. Considering the importance of traditional production methods, she visited Taiwan to further enhance her knowledge. Through this trip, she was able to grasp the art of making Chinese pastries as well as choosing the best ingredients and bringing out the best of their natural flavors. Through countless sleepless nights testing and developing, the recipes were made and are available to you in our stores today.",
+        description: "Dough Magic Singapore is an Authentic Chinese pastry store with a focus in experimenting and researching to better our products. Dough Magic mainly produces and sells dumplings, Mantou, XiaoLongBao, Carton Baos and other Chinese snacks such as ShengJianBao and RouJiaMo, offering both in-person stores and online deliver. Dough Magic's first branch opened in Chinatown of Singapore in 2016. Since then, we have expanded to more than 20 outlets.",
         website:"https://doughmagic.com/",
 
     },
@@ -56,7 +56,7 @@ const stores = [
         storeName: "Toast & Roll by Swee Heng",
         headerImage: "toastrollImg.jpg",
         storeLogo: "toastrollLogo.jpg",
-        time: "Coming Soon",
+        time: 'Coming Soon',
         modalImg: "toastroll1.jpg",
         location: "#01-26",
         contact: "TBA",
@@ -74,7 +74,7 @@ const stores = [
         location: "#02-01",
         contact: "+65 8083 9293",
         closingDate: "Sunday",
-        description: 'The Braces Practice specialize in orthodontic treatments, offering Invisalign/Metal/Ceramic/Damon braces and for effective teeth straightening. We also provide general dental services, including scaling & polishing, extractions, filings, wisdom tooth surgery, implants, whitening, and root canal treatments. <br><br>Additionally, we offer specialized braces for jaw surgery and custom retainers to maintain alignment post-treatment. <br><br>With tailored Student Packages, we make quality orthodontic care accessible to all. <br><br>Visit <a href="https://www.thebracespractice.com/" style="color: blue;" target="_blank">The Braces Practice</a> to lear more or book an appoinment.',
+        description: 'The Braces Practice specialize in orthodontic treatments, offering Invisalign/Metal/Ceramic/Damon braces and for effective teeth straightening. We also provide general dental services, including scaling & polishing, extractions, fillings, wisdom tooth surgery, implants, whitening, and root canal treatments. <br><br>Additionally, we offer specialized braces for jaw surgery and custom retainers to maintain alignment post-treatment. <br><br>With tailored Student Packages, we make quality orthodontic care accessible to all. <br><br>Visit <a href="https://www.thebracespractice.com/" style="color: blue;" target="_blank">The Braces Practice</a> to learn more or book an appoinment.',
         website: "https://www.thebracespractice.com/"
     },
 
@@ -139,7 +139,7 @@ const stores = [
         modalImg: "raffles1.jpg",
         location: "#02-21",
         contact: "TBA",
-        description: "Raffles Medical Group (RMG) is a leading integrated private healthcare provider in Asia, operating medical facilities in 14 cities in Singapore, China, Japan, Vietnam and Cambodia. It is the only Singapore-owned private medical provider in Singapore that owns and operates a fully integrated healthcare organisation comprising a tertiary hospital, a network of family medicine and dental clinics, insurance services, Japanese and Traditional Chinese Medicine clinics, and a consumer healthcare division. <br><br>Founded in 1976 with two clinics in central Singapore, RMG has grown consistently over the years to serve over 2 million patients and 7,000 corporate clients each year. RMG has a staff strength of more than 2,700, including close to 430 multi-specialty physicians.",
+        description: "Raffles Medical is the primary care network of Raffles Medical Group, which provides family medicine, health screening, and dental services. Besides operating clinics in China, Japan, Vietnam, and Cambodia, it is also one of the largest network of family medicine clinics in Singapore.<br><br>Our team of family physicians provides care for patients of all ages, including treatment and management of acute and chronic diseases, vaccinations, travel health, and health screening.<br><br>Raffles Medical clinics are approved to serve Singaporeans under various healthcare and government schemes including the Healthier SG programme, the Pioneer and Merdeka Generation scheme, and Baby Bonus.",
         website: "http://www.rafflesmedicalgroup.com/"
     },
 ];
