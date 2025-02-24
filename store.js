@@ -30,7 +30,7 @@ const stores = [
         storeName: "Dough Magic",
         headerImage: "doughImg.webp",
         storeLogo: "doughLogo.png",
-        time: "Coming Soon",
+        time: '<p>Monday - Sunday <br> 9:00am - 9:00pm</p>',
         modalImg: "dough1.webp",
         location: "#01-18",
         contact: "TBA",
@@ -40,7 +40,7 @@ const stores = [
     },
     {
         category: "F&B",
-        storeName: "Tomoro Coffee",
+        storeName: "TOMORO COFFE",
         headerImage: "tomoroImg.jpg",
         storeLogo: "tomoroLogo.png",
         modalImg: "tomoro1.jpg",
@@ -60,7 +60,7 @@ const stores = [
         modalImg: "toastroll1.jpg",
         location: "#01-26",
         contact: "TBA",
-        description: "Toast & Roll focuses on quality, using premium ingredients like Japanese flour and French butter. While Westies can conveniently visit, others may hope for more outlets to open across Singapore in the future",
+        description: "At Toast & Roll, we invite you to indulge in a delightful selection of sweet and savory treats. Every bite is thoughtfully crafted, offering a symphony of textures—soft, crispy, and chewy—that promises an unforgettable experience for your taste buds. Whether you're on the go or taking a moment to savor something special, Toast & Roll is your perfect destination. <br><br> Our distinctive branding features a cat (symbolizing toast) and a rabbit (symbolizing roll), capturing the essence of our unique offerings. This whimsical touch adds personality and makes our brand memorable for customers of all ages.",
         website: "https://www.instagram.com/toast_rollsg/"
     },
 
@@ -69,7 +69,7 @@ const stores = [
         storeName: "The Braces Practice",
         headerImage: "bracesImg.png",
         storeLogo: "bracesLogo.jpg",
-        time: '<p>Monday - Friday <br> 11:00am - 8:00pm <br><br> Saturday <br> 9:00am - 5:00pm <br><br> <span style="color: maroon;">*Store is closed on Sunday</span></p>',
+        time: '<p>Monday - Friday <br> 11:00am - 8:00pm <br><br> Saturday <br> 9:00am - 5:00pm <br><br> <span style="color: maroon;">*Store is closed on Sundays</span></p>',
         modalImg: "braces1.webp",
         location: "#02-01",
         contact: "+65 8083 9293",
@@ -81,14 +81,14 @@ const stores = [
     {
         category: "F&B",
         storeName: "Sushiro",
-        headerImage: "sushiroImg.webp",
+        headerImage: "sushiroImg.jpg",
         storeLogo: "sushiroLogo.png",
         time: "Coming Soon",
-        modalImg: "sushiro1.webp",
+        modalImg: "sushiro1.jpg",
         location: "#02-02 to 07",
         contact: "TBA",
-        description: "Sushiro Singapore is part of the internationally renowned Sushiro Group, founded in Japan in 1984. Our journey began with a simple yet ambitious vision: to serve the freshest, most delectable sushi to our customers while honouring the rich traditions of Japanese cuisine. <br><br> Over the years, our dedication to this vision has allowed us to grow and expand, and we are now proud to operate multiple branches across Singapore. Each location is designed to offer a unique dining experience, blending contemporary aesthetics with the timeless beauty of Japanese culture.",
-        website: "https://sushirosg.org/"
+        description: "SUSHIRO is Japan’s number 1 kaiten sushi chain. With more than 700 outlets in Japan and other countries, Sushiro serves over 100 varieties of delicious sushi and Japanese dishes to about 150 million customers every year.  <br><br> With the core corporate mission, “Tasty Sushi for All. Tasty Sushi for the Heart.”Sushiro maintains its key focus on careful ingredient selection, constant development of new flavours, employment of advanced technology to enhance service quality and is committed to serving high-quality and value-for-money Japanese sushi to customers.",
+        website: "https://www.akindo-sushiro.co.jp/en/ "
     },
 
     {
@@ -135,7 +135,7 @@ const stores = [
         storeName: "Raffles Medical Clinic",
         headerImage: "rafflesImg.jpg",
         storeLogo: "rafflesLogo.jpg",
-        time: '<p>Monday - Friday (except Wednesday) <br> 8:30am - 1:00pm <br> 2:00pm - 5:30pm <br> 6:30pm - 9:30pm <br><br> Wednesday <br> 8:30am - 1:00pm <br> 2:00pm - 5:30pm <br><br> Satuday <br> 8:30am - 1:00pm <br><br> <span style="color: maroon;">*Store is closed on Sunday</span></p>',
+        time: '<p>Monday - Friday (except Wednesday) <br> 8:30am - 1:00pm <br> 2:00pm - 5:30pm <br> 6:30pm - 9:30pm <br><br> Wednesday <br> 8:30am - 1:00pm <br> 2:00pm - 5:30pm <br><br> Satuday <br> 8:30am - 1:00pm <br><br> <span style="color: maroon;">*Store is closed on Sundays</span></p>',
         modalImg: "raffles1.jpg",
         location: "#02-21",
         contact: "TBA",
