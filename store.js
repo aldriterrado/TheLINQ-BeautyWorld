@@ -69,13 +69,14 @@ const stores = [
         storeName: "The Braces Practice",
         headerImage: "bracesImg.png",
         storeLogo: "bracesLogo.jpg",
-        time: '<p>Monday - Friday <br> 11:00am - 8:00pm <br><br> Saturday <br> 9:00am - 5:00pm <br><br> <span style="color: maroon;">*Store is closed on Sundays</span></p>',
-        modalImg: "braces1.webp",
+        time: '<p>Monday - Friday <br> 11:00am - 8:00pm <br><br> Saturday <br> 9:00am - 5:00pm <br><br> <span style="color: maroon;">*Clinic is closed on Sunday and Public Holidays</span></p>',
+        modalImg: "braces1.png",
         location: "#02-01",
         contact: "+65 8083 9293",
         closingDate: "Sunday",
-        description: 'The Braces Practice specialize in orthodontic treatments, offering Invisalign/Metal/Ceramic/Damon braces and for effective teeth straightening. We also provide general dental services, including scaling & polishing, extractions, fillings, wisdom tooth surgery, implants, whitening, and root canal treatments. <br><br>Additionally, we offer specialized braces for jaw surgery and custom retainers to maintain alignment post-treatment. <br><br>With tailored Student Packages, we make quality orthodontic care accessible to all. <br><br>Visit <a href="https://www.thebracespractice.com/" style="color: blue;" target="_blank">The Braces Practice</a> to learn more or book an appoinment.',
-        website: "https://www.thebracespractice.com/"
+        description: '<p>At The Braces Practice, we specialize in orthodontic treatments, offering <strong>Invisalign</strong> / <strong>Metal</strong> / <strong>Ceramic</strong> / <strong>Damon braces</strong> for effective teeth straightening. We also provide General Dental services, including <strong>Scaling & Polishing, Tooth Extractions, Fillings, Wisdom Tooth Surgery, Dental Implants, Whitening, </strong> and <strong>Root Canal treatments</strong> <br><br> Additionally, we offer specialized braces for <strong>Jaw Surgery</strong> and custom <strong>Retainers</strong> to maintain teeth alignment post-treatment. <br><br> With tailored <strong><i>Student Packages,</i></strong> we make quality orthodontic care accessible to all. <br><br> Visit <a href="https://www.thebracespractice.com/" target="_blank" style="color: blue;">The Braces Practice</a> to learn more or book an appointment</p>',
+        website: "https://www.thebracespractice.com/",
+        qrCode: "bracesqr.png"
     },
 
     {
@@ -236,6 +237,9 @@ function displayStores(filteredStores) {
                                     <li class="d-flex mb-3">
                                         <img src="assets/website.png" alt="Contact" style="height: 30px;">
                                         <p class="mb-0 ms-2 d-flex align-items-center"><a href=${store.website} target="_blank" style="color: blue;">${store.website}</a></p>
+                                    </li>
+                                    <li class="d-flex mb-3">
+                                        <img src="assets/${store.qrCode}" alt="Contact" style="height: 150px;">
                                     </li>
                                 </ul>
                             </div>
