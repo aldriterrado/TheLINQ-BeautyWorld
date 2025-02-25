@@ -136,7 +136,7 @@ const stores = [
         storeName: "Raffles Medical Clinic",
         headerImage: "rafflesImg.jpg",
         storeLogo: "rafflesLogo.jpg",
-        time: '<p>Monday - Friday (except Wednesday) <br> 8:30am - 1:00pm <br> 2:00pm - 5:30pm <br> 6:30pm - 9:30pm <br><br> Wednesday <br> 8:30am - 1:00pm <br> 2:00pm - 5:30pm <br><br> Satuday <br> 8:30am - 1:00pm <br><br> <span style="color: maroon;">*Store is closed on Sundays</span></p>',
+        time: '<p>Monday - Friday (except Wednesday) <br> 8:30am - 1:00pm <br> 2:00pm - 5:30pm <br> 6:30pm - 9:30pm <br><br> Wednesday <br> 8:30am - 1:00pm <br> 2:00pm - 5:30pm <br><br> Satuday <br> 8:30am - 1:00pm <br><br> <span style="color: maroon;">*Clinic is closed on Sunday and Public Holidays</span></p>',
         modalImg: "raffles1.jpg",
         location: "#02-21",
         contact: "TBA",
@@ -237,9 +237,6 @@ function displayStores(filteredStores) {
                                     <li class="d-flex mb-3">
                                         <img src="assets/website.png" alt="Contact" style="height: 30px;">
                                         <p class="mb-0 ms-2 d-flex align-items-center"><a href=${store.website} target="_blank" style="color: blue;">${store.website}</a></p>
-                                    </li>
-                                    <li class="d-flex mb-3">
-                                        <img src="assets/${store.qrCode}" alt="Contact" style="height: 150px;">
                                     </li>
                                 </ul>
                             </div>
